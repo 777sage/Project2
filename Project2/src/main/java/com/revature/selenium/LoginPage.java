@@ -14,13 +14,13 @@ public class LoginPage {
 	String trainerPassword;	
 	
 	public static void main(String[] args) {
-		File chrome = new File("src/main/resources/chromedriver");
-		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
-		WebDriver driver = new ChromeDriver();	
-
-		
-		LoginPage lp = new LoginPage();
-		lp.loginAsTrainerWithBadCredential(driver);
+//		File chrome = new File("src/main/resources/chromedriver");
+//		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
+//		WebDriver driver = new ChromeDriver();	
+//
+//		
+//		LoginPage lp = new LoginPage();
+//		lp.loginAsTrainerWithBadCredential(driver);
 		
 	}
 		
