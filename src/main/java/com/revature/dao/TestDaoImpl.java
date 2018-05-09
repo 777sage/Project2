@@ -1,6 +1,11 @@
 package com.revature.dao;
 
+import java.sql.Timestamp;
 import java.util.List;
+
+import javax.persistence.NoResultException;
+import javax.persistence.Query;
+
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -8,20 +13,6 @@ import com.revature.model.Test;
 import com.revature.util.HibernateUtil;
 
 public class TestDaoImpl implements TestDao {
-	public void insertTestXML(Test tst) {
-		Session session = HibernateUtil.getSession().openSession();
-		Transaction t1 = null;
-		try {
-			t1 = session.beginTransaction();
-			session.save(tst);
-			t1.commit();
-		} catch (HibernateException h) {
-
-		} finally {
-			session.close();
-		}
-
-	}
 
 	public void insertTest(Test tst) {
 		Session session = HibernateUtil.getSession().openSession();
@@ -41,17 +32,26 @@ public class TestDaoImpl implements TestDao {
 
 	}
 
-	public void updateTest(int id, String name) {
+	public void updateTest(String name, String status) {
 		Session session = HibernateUtil.getSession().openSession();
 		Transaction t1 = null;
 		Test tst;
 		try {
 			t1 = session.beginTransaction();
-			tst = session.get(Test.class, id);
-			tst.getTid();
+			Query query = session.createQuery("FROM Test WHERE testName=:name");
+			query.setParameter("name", name);
+			tst = (Test) query.getSingleResult();
+			tst.setStatus(status);
+			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+			tst.setTimestamp(timestamp);
 			session.saveOrUpdate(tst);
 			t1.commit();
-		} catch (HibernateException h) {
+		} catch(NoResultException n) {
+			tst=new Test(name,status);
+			session.save(tst);
+			t1.commit();
+		}
+		catch (HibernateException h) {
 			if (t1 != null) {
 				t1.rollback();
 			}
@@ -60,12 +60,14 @@ public class TestDaoImpl implements TestDao {
 		}
 	}
 
-	public Test findTestById(int id) {
+	public Test findTestByName(String name) {
 		Session session = HibernateUtil.getSession().openSession();
 		Test tst = null;
 		try {
 			session.beginTransaction();
-			tst = session.get(Test.class, id);
+			Query query = session.createQuery("FROM Test WHERE testName=:name");
+			query.setParameter("name", name);
+			tst = (Test) query.getSingleResult();
 		} catch (HibernateException h) {
 			//
 		} finally {

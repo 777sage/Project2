@@ -5,10 +5,9 @@ import com.revature.model.Test;
 
 public interface TestDao {
 
-	public void insertTestXML(Test emp);
 	public void insertTest(Test emp);
-	public void updateTest(int id, String name);
-	public Test findTestById(int id);
+	public void updateTest(String name, String status);
+	public Test findTestByName(String name);
 	public List<Test> getAllTests();
 	public void deleteTest(int id);
 	

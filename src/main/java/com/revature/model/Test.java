@@ -12,6 +12,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.hibernate.annotations.UpdateTimestamp;
+
 @Entity
 @Table()
 public class Test {
@@ -19,7 +21,7 @@ public class Test {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seqname")
 	@SequenceGenerator(initialValue=1, sequenceName="seq_name", allocationSize=1, name="seqname")
 	private int tid;
-	@Column(name="testName", nullable=false)
+	@Column(name="testName", unique=true, nullable=false)
 	private String testName;
 	@Column(name="status")
 	private String status;
@@ -27,6 +29,12 @@ public class Test {
 	@Column(name="time", nullable = false, 
 	columnDefinition="TIMESTAMP default CURRENT_TIMESTAMP")
 	private Date timestamp = new Date();
+	public Date getTimestamp() {
+		return timestamp;
+	}
+	public void setTimestamp(Date timestamp) {
+		this.timestamp = timestamp;
+	}
 	public int getTid() {
 		return tid;
 	}
@@ -38,7 +46,7 @@ public class Test {
 		super();
 		this.testName = testName;
 		this.status = status;
-	}
+	}	
 	@Override
 	public String toString() {
 		return "Test [tid=" + tid + ", testName=" + testName + ", status=" + status + "]";
