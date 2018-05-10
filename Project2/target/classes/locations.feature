@@ -1,6 +1,9 @@
 Feature: View Revature locations, buildings, and rooms
 
 Scenario: Select an entry that has a location, buliding and room
+
+When location is clicked
+Then check if on login page
 Given a location
 And with a building 
 And room
