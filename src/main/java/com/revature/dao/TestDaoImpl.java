@@ -14,13 +14,14 @@ import com.revature.util.HibernateUtil;
 
 public class TestDaoImpl implements TestDao {
 
-	public void insertTest(Test tst) {
+	public boolean insertTest(Test tst) {
 		Session session = HibernateUtil.getSession().openSession();
 		Transaction t1 = null;
 		try {
 			t1 = session.beginTransaction();
 			session.save(tst);
 			t1.commit();
+			return true;
 
 		} catch (HibernateException h) {
 			if (t1 != null) {
@@ -29,10 +30,10 @@ public class TestDaoImpl implements TestDao {
 		} finally {
 			session.close();
 		}
-
+		return false;
 	}
 
-	public void updateTest(String name, String status) {
+	public boolean updateTest(String name, String status) {
 		Session session = HibernateUtil.getSession().openSession();
 		Transaction t1 = null;
 		Test tst;
@@ -46,10 +47,12 @@ public class TestDaoImpl implements TestDao {
 			tst.setTimestamp(timestamp);
 			session.saveOrUpdate(tst);
 			t1.commit();
+			return true;
 		} catch(NoResultException n) {
 			tst=new Test(name,status);
 			session.save(tst);
 			t1.commit();
+			return true;
 		}
 		catch (HibernateException h) {
 			if (t1 != null) {
@@ -58,6 +61,7 @@ public class TestDaoImpl implements TestDao {
 		} finally {
 			session.close();
 		}
+		return false;
 	}
 
 	public Test findTestByName(String name) {
@@ -91,7 +95,8 @@ public class TestDaoImpl implements TestDao {
 		return Tests;
 	}
 
-	public void deleteTest(int id) {
+	public boolean deleteTest(int id) {
+		return false;
 		// TODO Auto-generated method stub
 
 	}

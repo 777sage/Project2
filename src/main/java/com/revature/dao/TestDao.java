@@ -5,10 +5,10 @@ import com.revature.model.Test;
 
 public interface TestDao {
 
-	public void insertTest(Test emp);
-	public void updateTest(String name, String status);
+	public boolean insertTest(Test emp);
+	public boolean updateTest(String name, String status);
 	public Test findTestByName(String name);
 	public List<Test> getAllTests();
-	public void deleteTest(int id);
+	public boolean deleteTest(int id);
 	
 }
