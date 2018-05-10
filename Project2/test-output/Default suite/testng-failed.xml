@@ -6,9 +6,8 @@
       <class name="com.revature.testng.SalesforceLoginTest">
         <methods>
           <include name="beforeClass"/>
+          <include name="loginAsTrainerLandsOnHomePage"/>
           <include name="beforeMethod"/>
-          <include name="findLoginPageSuccessful"/>
-          <include name="loginAsTrainerSuccessful"/>
           <include name="afterClass"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
