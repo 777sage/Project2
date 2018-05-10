@@ -108,7 +108,7 @@ public class SalesforceLoginTest {
   
   @Test()
   public void loginAsTrainerWithWrongCredentials() {
-	  
+	  System.out.println("Useless print for a commit");
   }
   
 
