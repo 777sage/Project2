@@ -5,16 +5,19 @@
     <classes>
       <class name="com.revature.testng.SalesforceLoginTest">
         <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
           <include name="findLoginPageSuccessful"/>
-          <include name="loginAsTrainerSuccessful"/>
-          <include name="afterClass"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="loginAsVpSuccessful"/>
+          <include name="beforeClass"/>
+          <include name="loginAsTrainerLandsOnHomePage"/>
+          <include name="loginAsTrainerWithWrongCredentials"/>
+          <include name="beforeMethod"/>
+          <include name="loginAsTrainerSuccessful"/>
+          <include name="afterClass"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
-          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.revature.testng.SalesforceLoginTest -->
     </classes>
