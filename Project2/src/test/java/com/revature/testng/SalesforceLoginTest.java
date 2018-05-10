@@ -112,7 +112,7 @@ public class SalesforceLoginTest {
 //	  assertEquals(loginPageTitle, "Login | Salesforce"); 
 	  try {
 		  assertEquals(loginPageTitle, "Login | Salesforce"); 
-		  Service.updateTest("findLoginPageSuccessul", "Success");
+		  Service.updateTest("findLoginPageSuccessful", "Success");
 		  System.out.println(Service.getAllTests());
 	  } catch(Error e) {
 		  Service.updateTest("findLoginPageSuccessful", "Failed");
@@ -126,35 +126,123 @@ public class SalesforceLoginTest {
 	  lp.loginAsTrainerWithBadCredential(driver);
 	  WebElement error = driver.findElement(By.id("error"));
 	  boolean passwordMessageShown = error.getText().contains("password"); 
-	  assertTrue(passwordMessageShown);
+//	  assertTrue(passwordMessageShown);
+	  try {
+		  assertTrue(passwordMessageShown);
+		  Service.updateTest("loginAsTrainerWithWrongCredentials", "Success");
+		  System.out.println(Service.getAllTests());
+	  } catch(Error e) {
+		  Service.updateTest("loginAsTrainerWithWrongCredentials", "Failed");
+		  System.out.println(e.getMessage());
+	  }
   }
   
   @Test(priority=2)
   public void loginAsTrainerSuccessful() {
 	  lp.loginAsTrainer(driver);
-	  String homePageTitle = lp.getTitle(driver);
-	  assertEquals(homePageTitle, "AssignForce");
+//	  assertEquals(homePageTitle, "AssignForce");
+	  try {
+		  String homePageTitle = lp.getTitle(driver);
+		  assertEquals(homePageTitle, "AssignForce");
+		  Service.updateTest("loginAsTrainerSuccessful", "Success");
+		  System.out.println(Service.getAllTests());
+	  } catch(Error e) {
+		  Service.updateTest("loginAsTrainerSuccessful", "Failed");
+		  System.out.println(e.getMessage());
+	  }
   }
   
   @Test(priority=3)
-  public void loginAsTrainerLandsOnHomePage() {
-	  System.out.println("Which page show all batches: " + driver.getTitle());
+  public void homePageDisplaysAllBatches() {
 	  lp.loginAsTrainer(driver);
-//	  WebElement batchHead = driver.findElement(By.tagName("table"));
-//	  System.out.println(batchHead);
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  WebElement logo = driver.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/img"));
+	  
 	  System.out.println("Title " + driver.getTitle());
-	  System.out.println(logo);
-	  WebElement batchHeader = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/div[1]/span"));
-	  System.out.println(batchHeader.getText());
+	  try {
+		  WebElement batchHeader = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/div[1]/span"));
+		  assertEquals(batchHeader.getText(), "All Batches");
+		  Service.updateTest("loginAsTrainerLandsOnHomePage", "Success");
+		  System.out.println(Service.getAllTests());
+	  } catch(Error e) {
+		  Service.updateTest("loginAsTrainerLandsOnHomePage", "Failed");
+		  System.out.println(e.getMessage());
+	  }
   }
   
   @Test(priority=4)
+  public void navigationTagsActive() {
+	  lp.loginAsTrainer(driver);
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  try {
+		  WebElement overviewTab = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[1]"));
+		  overviewTab.click();
+		  
+		  WebElement batchesTab = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[2]/a"));
+		  batchesTab.click();
+		  
+		  WebElement locationsTab = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[3]"));
+		  locationsTab.click();
+		  
+		  WebElement curriculumTab = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[4]"));
+		  curriculumTab.click();
+		  
+		  WebElement trainersTab = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]"));
+		  trainersTab.click();
+		  
+		  WebElement profileTab = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[6]"));
+		  profileTab.click();
+		  
+		  WebElement reportsTab = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[7]"));
+		  reportsTab.click();
+		  String isSelected = reportsTab.getAttribute("aria-selected");
+		  System.out.println("Is Selected: " + isSelected);
+		  assertEquals(isSelected, "true");
+		  
+		  WebElement reportsTabSpan = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[7]/a/span/span"));
+		  System.out.println("Reports Tab Test" + reportsTabSpan.getText());
+		  String reportsTabText = reportsTabSpan.getText();
+		  assertEquals(reportsTabText, "REPORTS");
+		  
+		  Service.updateTest("navigationTagsActive", "Success");
+
+		     
+	  } catch(Exception e) {
+		  Service.updateTest("navigationTagsActive", "Failed");
+		  System.out.println(e.getMessage());
+	  }
+
+  }
+  
+  @Test(priority=5)
+  public void filterSuccessful() {
+	  lp.loginAsTrainer(driver);
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  WebElement filter = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/md-menu/button/md-icon"));
+	  filter.click();
+	  
+	  WebElement selectAll = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[3]/button"));
+	  selectAll.click();
+	  
+	  filter.click();
+	  
+	  WebElement selectTwoWeeks = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[2]/button/span"));
+	  selectTwoWeeks.click();
+	  
+  }
+  
+  @Test(priority=10)
   public void loginAsVpSuccessful() {
 	  lp.loginAsVp(driver);
-	  String homePageTitle = lp.getTitle(driver);
-	  assertEquals(homePageTitle, "AssignForce");
+	  try {
+		  String homePageTitle = lp.getTitle(driver);
+		  assertEquals(homePageTitle, "AssignForce");
+		  Service.updateTest("loginAsVpSuccessful", "Success");
+		  System.out.println(Service.getAllTests());
+	  } catch(Error e) {
+		  Service.updateTest("loginAsVpSuccessful", "Failed");
+		  System.out.println(e.getMessage());
+	  }
   }
   
 
