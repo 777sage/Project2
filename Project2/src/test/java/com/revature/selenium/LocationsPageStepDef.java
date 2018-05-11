@@ -1,19 +1,19 @@
 package com.revature.selenium;
 
+import static org.testng.Assert.assertTrue;
+
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import cucumber.api.PendingException;
+import com.revature.serviceHooks.ServiceHooks;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class LocationsPageStepDef {
-	private WebDriver driver;
-
-	public void initializeWebDriver(WebDriver driver) {
-		this.driver = driver;
-	}
 
 	@Given("^a location$")
 	public void a_location() throws Throwable {
@@ -67,12 +67,21 @@ public class LocationsPageStepDef {
 	
 	@When("^locations button pressed$")
 	public void locations_button_pressed() throws Throwable {
-		System.out.println("Inside click locations");
-		driver.findElement(By.className("_md-nav-button-text ng-scope")).click();
+		//System.out.println("before current url in button press");
+		//System.out.println(ServiceHooks.driver.getCurrentUrl() + "inside locations button");
+		System.out.println("Inside click locations, still here?");
+		ServiceHooks.driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		//System.out.println("inside click after timeout");
+		ServiceHooks.driver.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[3]/a/span")).click();
+		ServiceHooks.driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		//System.out.println("inside click locaiton after find element");
 	}
 
 	@Then("^check the url$")
 	public void check_the_url() throws Throwable {
 	    System.out.println("inside check url bottom");
+	    String expectedURL = "https://dev.assignforce.revaturelabs.com/locations";
+	    
+	    assertTrue(expectedURL.equals(ServiceHooks.driver.getCurrentUrl()));
 	}
 }
