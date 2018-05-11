@@ -16,7 +16,13 @@ public class HibernateUtil {
 
 	public HibernateUtil() {
 	}
-
+	static {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			
+		}
+	}
 	// The configure method, can take a filename, but by
 	// default, it looks for a configuration file
 	// name: 'hibernate.cfg.xml
@@ -24,7 +30,7 @@ public class HibernateUtil {
 		InputStream in =null;
 		Properties props = new Properties();
 		try {
-			in = new FileInputStream("src/main/resources/hibernate.properties");
+			in = new FileInputStream("C:\\GitHUb\\Project2\\Project2\\src\\main\\resources\\hibernate.properties");
 			props.load(in);
 		}catch(IOException fnfe) {
 			fnfe.getMessage();

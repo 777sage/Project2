@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+
+<body>
+<ul>
+	<li><a onclick="getAllTests()">All Tests</a></li>
+</ul>
+        <div class="table-container">
+        	<table id="test-table" class="table">
+        		<thead>
+        			<tr>
+        			<th scope="col">Test ID</th>
+        			<th scope="col">Test Name</th>
+        			<th scope="col">Test Status</th>
+        			<th scope="col">Timestamp</th>
+        			</tr>
+        		</thead>
+        		<tbody id = "test-body"></tbody>
+        	</table>
+        </div>
+        <script type="text/javascript" src="testdata.js"></script>
+</body>
+</html>
+</html>
