@@ -58,7 +58,7 @@ public class SalesforceLoginTest {
 
   @AfterMethod
   public void afterMethod() {
-	  driver.close();
+	  driver.quit();
   }
 
 
