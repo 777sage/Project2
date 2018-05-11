@@ -113,7 +113,7 @@ public class SalesforceLoginTest {
 	  try {
 		  assertEquals(loginPageTitle, "Login | Salesforce"); 
 		  Service.updateTest("findLoginPageSuccessful", "Success");
-		  System.out.println(Service.getAllTests());
+//		  System.out.println(Service.getAllTests());
 	  } catch(Error e) {
 		  Service.updateTest("findLoginPageSuccessful", "Failed");
 		  System.out.println(e.getMessage());
@@ -130,7 +130,7 @@ public class SalesforceLoginTest {
 	  try {
 		  assertTrue(passwordMessageShown);
 		  Service.updateTest("loginAsTrainerWithWrongCredentials", "Success");
-		  System.out.println(Service.getAllTests());
+//		  System.out.println(Service.getAllTests());
 	  } catch(Error e) {
 		  Service.updateTest("loginAsTrainerWithWrongCredentials", "Failed");
 		  System.out.println(e.getMessage());
@@ -145,7 +145,7 @@ public class SalesforceLoginTest {
 		  String homePageTitle = lp.getTitle(driver);
 		  assertEquals(homePageTitle, "AssignForce");
 		  Service.updateTest("loginAsTrainerSuccessful", "Success");
-		  System.out.println(Service.getAllTests());
+//		  System.out.println(Service.getAllTests());
 	  } catch(Error e) {
 		  Service.updateTest("loginAsTrainerSuccessful", "Failed");
 		  System.out.println(e.getMessage());
@@ -198,6 +198,7 @@ public class SalesforceLoginTest {
 		  String isSelected = reportsTab.getAttribute("aria-selected");
 		  System.out.println("Is Selected: " + isSelected);
 		  assertEquals(isSelected, "true");
+		  service.updateTest("reportsTabSelected", "Success");
 		  
 		  WebElement reportsTabSpan = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[7]/a/span/span"));
 		  System.out.println("Reports Tab Test" + reportsTabSpan.getText());
@@ -221,13 +222,37 @@ public class SalesforceLoginTest {
 	  WebElement filter = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/md-menu/button/md-icon"));
 	  filter.click();
 	  
-	  WebElement selectAll = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[3]/button"));
-	  selectAll.click();
+//	  WebElement selectAll = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[3]/button"));
+//	  WebElement selectAll = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[3]/button/span"));
+
+//	  selectAll.click();
 	  
-	  filter.click();
+//	  filter.click();
 	  
 	  WebElement selectTwoWeeks = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[2]/button/span"));
+	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	  
+	  WebElement filterModal = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/md-menu/button"));
+	  String isExpanded = filterModal.getAttribute("aria-expanded");
+	  try {
+
+		  assertEquals(isExpanded, "true");
+		  Service.updateTest("filterSuccessful", "Success");
+	  } catch(Error e) {
+		  Service.updateTest("filterSuccessful", "Failed");
+		  System.out.println(e.getMessage());
+	  }
+
+	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  selectTwoWeeks.click();
+
+//	  WebElement filterMenu = driver.findElement(By.xpath("//*[@id=\"menu_container_163\"]"));
+//	  String ishidden = filterMenu.getAttribute("aria-hidden");
+	  
+  
+//	  filter.click();
+//	  WebElement selectInProgress = driver.findElement(By.xpath("*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[1]/button/span"));	  
+  
 	  
   }
   
@@ -238,7 +263,7 @@ public class SalesforceLoginTest {
 		  String homePageTitle = lp.getTitle(driver);
 		  assertEquals(homePageTitle, "AssignForce");
 		  Service.updateTest("loginAsVpSuccessful", "Success");
-		  System.out.println(Service.getAllTests());
+//		  System.out.println(Service.getAllTests());
 	  } catch(Error e) {
 		  Service.updateTest("loginAsVpSuccessful", "Failed");
 		  System.out.println(e.getMessage());
