@@ -5,15 +5,19 @@
     <classes>
       <class name="com.revature.testng.SalesforceLoginTest">
         <methods>
-          <include name="beforeClass"/>
+          <include name="vpTrainerTests"/>
+          <include name="trainerTests"/>
           <include name="filterSuccessful"/>
-          <include name="beforeMethod"/>
-          <include name="afterClass"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
+          <include name="vpFilterSuccessful"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="homePageDisplaysAllBatches"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
-          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.revature.testng.SalesforceLoginTest -->
     </classes>
