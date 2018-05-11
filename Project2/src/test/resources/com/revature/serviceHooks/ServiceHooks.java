@@ -33,27 +33,27 @@ public static WebDriver driver;
 			  driver.findElement(By.id("username")).sendKeys(trainerUsername);
 			  driver.findElement(By.name("pw")).sendKeys(trainerPassword);
 			  driver.findElement(By.xpath("//*[@id='Login']")).click();
-			  driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+			  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		  } catch(Exception e) {
 			  System.out.println(e.getMessage());
 		  }
 		System.out.println("in service hooks before");
 	}
 	
-//	@After
-//	public void embedScreenshot(Scenario scenario) {
-//	    if (scenario.isFailed()) {
-//	        try {
-//	            // Code to capture and embed images in test reports (if scenario fails)
-//	        } catch (Exception e) {
-//	            e.printStackTrace();
-//	        }
-//	    }
-//	    else {
-//	    	//send success to the database
-//	    }
-//	    System.out.println("in service hooks after");
-//	    driver.close();
-//	    driver.quit();
-//	}
+	@After
+	public void embedScreenshot(Scenario scenario) {
+	    if (scenario.isFailed()) {
+	        try {
+	            // Code to capture and embed images in test reports (if scenario fails)
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	    }
+	    else {
+	    	//send success to the database
+	    }
+	    System.out.println("in service hooks after");
+	    driver.close();
+	    driver.quit();
+	}
 }
