@@ -73,15 +73,15 @@
             <artifactId>ojdbc7</artifactId>
             <version>12.1.0</version>
         </dependency> -->
-<<<<<<< HEAD
-=======
+
+
         
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc7</artifactId>
             <version>12.1.0.1</version>
 		</dependency>
->>>>>>> andy-dakota-friday
+
 		
 	</dependencies>
   <build>

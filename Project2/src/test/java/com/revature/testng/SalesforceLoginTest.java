@@ -42,8 +42,8 @@ public class SalesforceLoginTest {
 //  }
   @BeforeMethod
   public void beforeMethod() {
-//	  File chrome = new File("src/main/resources/chromedriver");
-	  File chrome = new File("src/test/resources/chromedriver.exe");
+	  File chrome = new File("src/main/resources/chromedriver");
+//	  File chrome = new File("src/test/resources/chromedriver.exe");
 	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 	  driver = new ChromeDriver();
 	  lp = new LoginPage();

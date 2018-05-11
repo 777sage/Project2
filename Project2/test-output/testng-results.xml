@@ -1,123 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
+<testng-results skipped="0" failed="8" ignored="0" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20677" started-at="2018-05-10T18:14:40Z" finished-at="2018-05-10T18:15:01Z">
+  <suite name="Default suite" duration-ms="58433" started-at="2018-05-11T19:51:10Z" finished-at="2018-05-11T19:52:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20677" started-at="2018-05-10T18:14:40Z" finished-at="2018-05-10T18:15:01Z">
+    <test name="Default test" duration-ms="58433" started-at="2018-05-11T19:51:10Z" finished-at="2018-05-11T19:52:09Z">
       <class name="com.revature.testng.SalesforceLoginTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2018-05-10T18:14:40Z" finished-at="2018-05-10T18:14:40Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2018-05-11T19:51:10Z" finished-at="2018-05-11T19:51:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-05-10T18:14:40Z" finished-at="2018-05-10T18:14:40Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-05-11T19:51:10Z" finished-at="2018-05-11T19:51:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-05-10T18:14:40Z" finished-at="2018-05-10T18:14:40Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-05-11T19:51:10Z" finished-at="2018-05-11T19:51:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="beforeMethod" is-config="true" duration-ms="20541" started-at="2018-05-10T18:14:40Z" finished-at="2018-05-10T18:15:00Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.revature.testng.SalesforceLoginTest.beforeMethod(SalesforceLoginTest.java:48)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41213/status] to be available after 20014 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-... 37 more
-Caused by: java.util.concurrent.TimeoutException
-at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:148)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 38 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="2831" started-at="2018-05-11T19:51:10Z" finished-at="2018-05-11T19:51:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="findLoginPageSuccessful()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="findLoginPageSuccessful" duration-ms="0" started-at="2018-05-10T18:15:00Z" finished-at="2018-05-10T18:15:00Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
+        <test-method status="FAIL" signature="findLoginPageSuccessful()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="findLoginPageSuccessful" duration-ms="1257" started-at="2018-05-11T19:51:13Z" finished-at="2018-05-11T19:51:14Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.revature.testng.SalesforceLoginTest.beforeMethod(SalesforceLoginTest.java:48)
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.revature.util.HibernateUtil.getSession(HibernateUtil.java:40)
+at com.revature.dao.TestDaoImpl.updateTest(TestDaoImpl.java:37)
+at com.revature.dao.Service.updateTest(Service.java:13)
+at com.revature.testng.SalesforceLoginTest.findLoginPageSuccessful(SalesforceLoginTest.java:115)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -137,61 +59,37 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41213/status] to be available after 20014 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-... 37 more
-Caused by: java.util.concurrent.TimeoutException
-at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:148)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findLoginPageSuccessful -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="194" started-at="2018-05-11T19:51:14Z" finished-at="2018-05-11T19:51:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1589" started-at="2018-05-11T19:51:15Z" finished-at="2018-05-11T19:51:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="loginAsTrainerWithWrongCredentials()[pri:1, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="loginAsTrainerWithWrongCredentials" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
+        <test-method status="FAIL" signature="loginAsTrainerWithWrongCredentials()[pri:1, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsTrainerWithWrongCredentials" duration-ms="3523" started-at="2018-05-11T19:51:16Z" finished-at="2018-05-11T19:51:20Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.revature.testng.SalesforceLoginTest.beforeMethod(SalesforceLoginTest.java:48)
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.revature.util.HibernateUtil.getSession(HibernateUtil.java:40)
+at com.revature.dao.TestDaoImpl.updateTest(TestDaoImpl.java:37)
+at com.revature.dao.Service.updateTest(Service.java:13)
+at com.revature.testng.SalesforceLoginTest.loginAsTrainerWithWrongCredentials(SalesforceLoginTest.java:132)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -211,61 +109,37 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41213/status] to be available after 20014 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-... 37 more
-Caused by: java.util.concurrent.TimeoutException
-at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:148)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsTrainerWithWrongCredentials -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="173" started-at="2018-05-11T19:51:20Z" finished-at="2018-05-11T19:51:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1572" started-at="2018-05-11T19:51:20Z" finished-at="2018-05-11T19:51:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="loginAsTrainerSuccessful()[pri:2, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="loginAsTrainerSuccessful" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
+        <test-method status="FAIL" signature="loginAsTrainerSuccessful()[pri:2, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsTrainerSuccessful" duration-ms="4574" started-at="2018-05-11T19:51:21Z" finished-at="2018-05-11T19:51:26Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.revature.testng.SalesforceLoginTest.beforeMethod(SalesforceLoginTest.java:48)
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.revature.util.HibernateUtil.getSession(HibernateUtil.java:40)
+at com.revature.dao.TestDaoImpl.updateTest(TestDaoImpl.java:37)
+at com.revature.dao.Service.updateTest(Service.java:13)
+at com.revature.testng.SalesforceLoginTest.loginAsTrainerSuccessful(SalesforceLoginTest.java:147)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -285,61 +159,37 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41213/status] to be available after 20014 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-... 37 more
-Caused by: java.util.concurrent.TimeoutException
-at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:148)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsTrainerSuccessful -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="134" started-at="2018-05-11T19:51:26Z" finished-at="2018-05-11T19:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1508" started-at="2018-05-11T19:51:26Z" finished-at="2018-05-11T19:51:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="loginAsTrainerLandsOnHomePage()[pri:3, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="loginAsTrainerLandsOnHomePage" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
+        <test-method status="FAIL" signature="homePageDisplaysAllBatches()[pri:3, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="homePageDisplaysAllBatches" duration-ms="7215" started-at="2018-05-11T19:51:28Z" finished-at="2018-05-11T19:51:35Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.revature.testng.SalesforceLoginTest.beforeMethod(SalesforceLoginTest.java:48)
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.revature.util.HibernateUtil.getSession(HibernateUtil.java:40)
+at com.revature.dao.TestDaoImpl.updateTest(TestDaoImpl.java:37)
+at com.revature.dao.Service.updateTest(Service.java:13)
+at com.revature.testng.SalesforceLoginTest.homePageDisplaysAllBatches(SalesforceLoginTest.java:167)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -359,194 +209,121 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41213/status] to be available after 20014 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-... 37 more
-Caused by: java.util.concurrent.TimeoutException
-at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:148)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsTrainerLandsOnHomePage -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="loginAsVpSuccessful()[pri:4, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="loginAsVpSuccessful" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.revature.testng.SalesforceLoginTest.beforeMethod(SalesforceLoginTest.java:48)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:41213/status] to be available after 20014 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-... 37 more
-Caused by: java.util.concurrent.TimeoutException
-at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:148)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 38 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsVpSuccessful -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@f6c48ac]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-05-10T18:15:01Z" finished-at="2018-05-10T18:15:01Z">
-=======
-<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="69273" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:38:12Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="69273" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:38:12Z">
-      <class name="com.revature.testng.SalesforceLoginTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:37:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:37:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:37:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="2949" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:37:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="findLoginPageSuccessful()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="findLoginPageSuccessful" duration-ms="7391" started-at="2018-05-11T19:37:06Z" finished-at="2018-05-11T19:37:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findLoginPageSuccessful -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="143" started-at="2018-05-11T19:37:13Z" finished-at="2018-05-11T19:37:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1565" started-at="2018-05-11T19:37:13Z" finished-at="2018-05-11T19:37:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginAsTrainerWithWrongCredentials()[pri:1, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsTrainerWithWrongCredentials" duration-ms="3612" started-at="2018-05-11T19:37:15Z" finished-at="2018-05-11T19:37:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsTrainerWithWrongCredentials -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="190" started-at="2018-05-11T19:37:18Z" finished-at="2018-05-11T19:37:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1459" started-at="2018-05-11T19:37:18Z" finished-at="2018-05-11T19:37:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginAsTrainerSuccessful()[pri:2, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsTrainerSuccessful" duration-ms="4469" started-at="2018-05-11T19:37:20Z" finished-at="2018-05-11T19:37:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsTrainerSuccessful -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="279" started-at="2018-05-11T19:37:24Z" finished-at="2018-05-11T19:37:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1640" started-at="2018-05-11T19:37:25Z" finished-at="2018-05-11T19:37:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="homePageDisplaysAllBatches()[pri:3, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="homePageDisplaysAllBatches" duration-ms="7503" started-at="2018-05-11T19:37:26Z" finished-at="2018-05-11T19:37:34Z">
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageDisplaysAllBatches -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="231" started-at="2018-05-11T19:37:34Z" finished-at="2018-05-11T19:37:34Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="183" started-at="2018-05-11T19:51:35Z" finished-at="2018-05-11T19:51:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1710" started-at="2018-05-11T19:37:34Z" finished-at="2018-05-11T19:37:36Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1370" started-at="2018-05-11T19:51:35Z" finished-at="2018-05-11T19:51:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="navigationTagsActive()[pri:4, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="navigationTagsActive" duration-ms="7824" started-at="2018-05-11T19:37:36Z" finished-at="2018-05-11T19:37:44Z">
+        <test-method status="FAIL" signature="navigationTagsActive()[pri:4, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="navigationTagsActive" duration-ms="7311" started-at="2018-05-11T19:51:36Z" finished-at="2018-05-11T19:51:44Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.revature.util.HibernateUtil.getSession(HibernateUtil.java:40)
+at com.revature.dao.TestDaoImpl.updateTest(TestDaoImpl.java:37)
+at com.revature.dao.Service.updateTest(Service.java:13)
+at com.revature.testng.SalesforceLoginTest.navigationTagsActive(SalesforceLoginTest.java:212)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigationTagsActive -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="198" started-at="2018-05-11T19:37:44Z" finished-at="2018-05-11T19:37:44Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="191" started-at="2018-05-11T19:51:44Z" finished-at="2018-05-11T19:51:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1436" started-at="2018-05-11T19:37:44Z" finished-at="2018-05-11T19:37:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1665" started-at="2018-05-11T19:51:44Z" finished-at="2018-05-11T19:51:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="filterSuccessful()[pri:5, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="filterSuccessful" duration-ms="7277" started-at="2018-05-11T19:37:45Z" finished-at="2018-05-11T19:37:52Z">
+        <test-method status="FAIL" signature="filterSuccessful()[pri:5, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="filterSuccessful" duration-ms="7743" started-at="2018-05-11T19:51:46Z" finished-at="2018-05-11T19:51:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.revature.util.HibernateUtil.getSession(HibernateUtil.java:40)
+at com.revature.dao.TestDaoImpl.updateTest(TestDaoImpl.java:37)
+at com.revature.dao.Service.updateTest(Service.java:13)
+at com.revature.testng.SalesforceLoginTest.filterSuccessful(SalesforceLoginTest.java:243)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterSuccessful -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="199" started-at="2018-05-11T19:51:53Z" finished-at="2018-05-11T19:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1583" started-at="2018-05-11T19:51:54Z" finished-at="2018-05-11T19:51:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="trainerTests()[pri:6, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="trainerTests" duration-ms="7307" started-at="2018-05-11T19:51:55Z" finished-at="2018-05-11T19:52:03Z">
           <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
               <![CDATA[element not visible
@@ -557,7 +334,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.1
 System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.50.118', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.170, webStorageEnabled: true}
-Session ID: fe14f31967bb6d12d899b35861ac4496]]>
+Session ID: b503838f105abd1b15e75eb265a45043]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
@@ -568,7 +345,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.1
 System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.50.118', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.170, webStorageEnabled: true}
-Session ID: fe14f31967bb6d12d899b35861ac4496
+Session ID: b503838f105abd1b15e75eb265a45043
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -583,7 +360,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at com.revature.testng.SalesforceLoginTest.filterSuccessful(SalesforceLoginTest.java:223)
+at com.revature.testng.SalesforceLoginTest.trainerTests(SalesforceLoginTest.java:268)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -614,45 +391,70 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filterSuccessful -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="211" started-at="2018-05-11T19:37:52Z" finished-at="2018-05-11T19:37:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1452" started-at="2018-05-11T19:37:53Z" finished-at="2018-05-11T19:37:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="trainerTests()[pri:6, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="trainerTests" duration-ms="11124" started-at="2018-05-11T19:37:54Z" finished-at="2018-05-11T19:38:05Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- trainerTests -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="189" started-at="2018-05-11T19:38:05Z" finished-at="2018-05-11T19:38:05Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="188" started-at="2018-05-11T19:52:03Z" finished-at="2018-05-11T19:52:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1514" started-at="2018-05-11T19:38:05Z" finished-at="2018-05-11T19:38:07Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1449" started-at="2018-05-11T19:52:03Z" finished-at="2018-05-11T19:52:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginAsVpSuccessful()[pri:10, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsVpSuccessful" duration-ms="4632" started-at="2018-05-11T19:38:07Z" finished-at="2018-05-11T19:38:12Z">
+        <test-method status="FAIL" signature="loginAsVpSuccessful()[pri:10, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsVpSuccessful" duration-ms="4292" started-at="2018-05-11T19:52:04Z" finished-at="2018-05-11T19:52:08Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.util.Properties$LineReader.readLine(Properties.java:434)
+at java.util.Properties.load0(Properties.java:353)
+at java.util.Properties.load(Properties.java:341)
+at com.revature.util.HibernateUtil.getSession(HibernateUtil.java:40)
+at com.revature.dao.TestDaoImpl.updateTest(TestDaoImpl.java:37)
+at com.revature.dao.Service.updateTest(Service.java:13)
+at com.revature.testng.SalesforceLoginTest.loginAsVpSuccessful(SalesforceLoginTest.java:297)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsVpSuccessful -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="192" started-at="2018-05-11T19:38:12Z" finished-at="2018-05-11T19:38:12Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="191" started-at="2018-05-11T19:52:08Z" finished-at="2018-05-11T19:52:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-05-11T19:38:12Z" finished-at="2018-05-11T19:38:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-11T19:38:12Z" finished-at="2018-05-11T19:38:12Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-05-11T19:52:09Z" finished-at="2018-05-11T19:52:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-05-11T19:38:12Z" finished-at="2018-05-11T19:38:12Z">
->>>>>>> andy-dakota-friday
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-05-11T19:52:09Z" finished-at="2018-05-11T19:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-05-11T19:52:09Z" finished-at="2018-05-11T19:52:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
