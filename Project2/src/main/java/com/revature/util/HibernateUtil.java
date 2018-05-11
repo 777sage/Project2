@@ -32,8 +32,8 @@ public class HibernateUtil {
 		Properties props = new Properties();
 		try {
 			File hibernateFile = new File("src/main/resources/hibernate.properties");
-			in = new FileInputStream(hibernateFile.getAbsolutePath());
-			//in = new FileInputStream("C:\\GitHUb\\Project2\\Project2\\src\\main\\resources\\hibernate.properties");
+			//in = new FileInputStream(hibernateFile.getAbsolutePath());
+			in = new FileInputStream("C:\\GitHUb\\Project2\\Project2\\src\\main\\resources\\hibernate.properties");
 			props.load(in);
 		}catch(IOException fnfe) {
 			fnfe.getMessage();
