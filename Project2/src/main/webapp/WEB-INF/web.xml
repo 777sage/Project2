@@ -4,8 +4,19 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>FrontController</servlet-name>
+  	<display-name>FrontController</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlet.FrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FrontController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
   
   <welcome-file-list>
+    <welcome-file>testdata.html</welcome-file>
   	<welcome-file>index.html</welcome-file>
   </welcome-file-list>
 </web-app>
