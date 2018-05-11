@@ -228,16 +228,11 @@ public class SalesforceLoginTest {
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  WebElement filter = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/md-menu/button/md-icon"));
 	  filter.click();
-	  
-//	  WebElement selectAll = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[3]/button"));
-//	  WebElement selectAll = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[3]/button/span"));
 
-//	  selectAll.click();
 	  
 //	  filter.click();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-//	  WebElement selectTwoWeeks = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[2]/button/span"));
 	  WebElement selectTwoWeeks = driver.findElement(By.cssSelector("#view > div > md-card > md-toolbar > md-menu > button > md-icon"));
 
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -255,15 +250,7 @@ public class SalesforceLoginTest {
 
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  selectTwoWeeks.click();
-
-//	  WebElement filterMenu = driver.findElement(By.xpath("//*[@id=\"menu_container_163\"]"));
-//	  String ishidden = filterMenu.getAttribute("aria-hidden");
-	  
-  
-//	  filter.click();
-//	  WebElement selectInProgress = driver.findElement(By.xpath("*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[1]/button/span"));	  
-  
-	  
+ 	  
   }
   
   @Test(priority=6)
@@ -318,12 +305,43 @@ public class SalesforceLoginTest {
 	  try {
 
 		  assertTrue(labelName.contains(trainerDetailElementText));
-		  Service.updateTest("trainerTests", "Success");
+		  Service.updateTest("vpTrainerTests", "Success");
 //		  System.out.println(Service.getAllTests());
 	  } catch(Error e) {
-		  Service.updateTest("trainerTests", "Failed");
+		  Service.updateTest("vpTrainerTests", "Failed");
 		  System.out.println(e.getMessage());
 	  }
+  }
+  
+  @Test(priority=8)
+  public void vpFilterSuccessful() {
+	  lp.loginAsVp(driver);
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  WebElement filter = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/md-menu/button/md-icon"));
+	  filter.click();
+
+	  
+//	  filter.click();
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	  WebElement selectTwoWeeks = driver.findElement(By.cssSelector("#view > div > md-card > md-toolbar > md-menu > button > md-icon"));
+
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  WebElement filterModal = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/md-menu/button"));
+	  String isExpanded = filterModal.getAttribute("aria-expanded");
+	  try {
+
+		  assertEquals(isExpanded, "true");
+		  Service.updateTest("vpFilterSuccessful", "Success");
+	  } catch(Error e) {
+		  Service.updateTest("vpFilterSuccessful", "Failed");
+		  System.out.println(e.getMessage());
+	  }
+
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  selectTwoWeeks.click();
+ 	  
   }
   
 
