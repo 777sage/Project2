@@ -2,88 +2,88 @@
 <testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72450" started-at="2018-05-11T18:18:13Z" finished-at="2018-05-11T18:19:25Z">
+  <suite name="Default suite" duration-ms="69273" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:38:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="72450" started-at="2018-05-11T18:18:13Z" finished-at="2018-05-11T18:19:25Z">
+    <test name="Default test" duration-ms="69273" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:38:12Z">
       <class name="com.revature.testng.SalesforceLoginTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeSuite" is-config="true" duration-ms="56" started-at="2018-05-11T18:18:13Z" finished-at="2018-05-11T18:18:13Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:37:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-05-11T18:18:13Z" finished-at="2018-05-11T18:18:13Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:37:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-05-11T18:18:13Z" finished-at="2018-05-11T18:18:13Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:37:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="3138" started-at="2018-05-11T18:18:13Z" finished-at="2018-05-11T18:18:16Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="2949" started-at="2018-05-11T19:37:03Z" finished-at="2018-05-11T19:37:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="findLoginPageSuccessful()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="findLoginPageSuccessful" duration-ms="9509" started-at="2018-05-11T18:18:16Z" finished-at="2018-05-11T18:18:26Z">
+        <test-method status="PASS" signature="findLoginPageSuccessful()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="findLoginPageSuccessful" duration-ms="7391" started-at="2018-05-11T19:37:06Z" finished-at="2018-05-11T19:37:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findLoginPageSuccessful -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="152" started-at="2018-05-11T18:18:26Z" finished-at="2018-05-11T18:18:26Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="143" started-at="2018-05-11T19:37:13Z" finished-at="2018-05-11T19:37:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1520" started-at="2018-05-11T18:18:26Z" finished-at="2018-05-11T18:18:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1565" started-at="2018-05-11T19:37:13Z" finished-at="2018-05-11T19:37:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginAsTrainerWithWrongCredentials()[pri:1, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsTrainerWithWrongCredentials" duration-ms="3772" started-at="2018-05-11T18:18:27Z" finished-at="2018-05-11T18:18:31Z">
+        <test-method status="PASS" signature="loginAsTrainerWithWrongCredentials()[pri:1, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsTrainerWithWrongCredentials" duration-ms="3612" started-at="2018-05-11T19:37:15Z" finished-at="2018-05-11T19:37:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsTrainerWithWrongCredentials -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="187" started-at="2018-05-11T18:18:31Z" finished-at="2018-05-11T18:18:31Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="190" started-at="2018-05-11T19:37:18Z" finished-at="2018-05-11T19:37:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1480" started-at="2018-05-11T18:18:31Z" finished-at="2018-05-11T18:18:33Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1459" started-at="2018-05-11T19:37:18Z" finished-at="2018-05-11T19:37:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginAsTrainerSuccessful()[pri:2, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsTrainerSuccessful" duration-ms="4661" started-at="2018-05-11T18:18:33Z" finished-at="2018-05-11T18:18:37Z">
+        <test-method status="PASS" signature="loginAsTrainerSuccessful()[pri:2, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsTrainerSuccessful" duration-ms="4469" started-at="2018-05-11T19:37:20Z" finished-at="2018-05-11T19:37:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsTrainerSuccessful -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="185" started-at="2018-05-11T18:18:37Z" finished-at="2018-05-11T18:18:38Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="279" started-at="2018-05-11T19:37:24Z" finished-at="2018-05-11T19:37:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1344" started-at="2018-05-11T18:18:38Z" finished-at="2018-05-11T18:18:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1640" started-at="2018-05-11T19:37:25Z" finished-at="2018-05-11T19:37:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="homePageDisplaysAllBatches()[pri:3, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="homePageDisplaysAllBatches" duration-ms="7569" started-at="2018-05-11T18:18:39Z" finished-at="2018-05-11T18:18:47Z">
+        <test-method status="PASS" signature="homePageDisplaysAllBatches()[pri:3, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="homePageDisplaysAllBatches" duration-ms="7503" started-at="2018-05-11T19:37:26Z" finished-at="2018-05-11T19:37:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageDisplaysAllBatches -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="201" started-at="2018-05-11T18:18:47Z" finished-at="2018-05-11T18:18:47Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="231" started-at="2018-05-11T19:37:34Z" finished-at="2018-05-11T19:37:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1708" started-at="2018-05-11T18:18:47Z" finished-at="2018-05-11T18:18:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1710" started-at="2018-05-11T19:37:34Z" finished-at="2018-05-11T19:37:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="navigationTagsActive()[pri:4, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="navigationTagsActive" duration-ms="7005" started-at="2018-05-11T18:18:48Z" finished-at="2018-05-11T18:18:55Z">
+        <test-method status="PASS" signature="navigationTagsActive()[pri:4, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="navigationTagsActive" duration-ms="7824" started-at="2018-05-11T19:37:36Z" finished-at="2018-05-11T19:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigationTagsActive -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="200" started-at="2018-05-11T18:18:55Z" finished-at="2018-05-11T18:18:56Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="198" started-at="2018-05-11T19:37:44Z" finished-at="2018-05-11T19:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1478" started-at="2018-05-11T18:18:56Z" finished-at="2018-05-11T18:18:57Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1436" started-at="2018-05-11T19:37:44Z" finished-at="2018-05-11T19:37:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="filterSuccessful()[pri:5, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="filterSuccessful" duration-ms="9020" started-at="2018-05-11T18:18:57Z" finished-at="2018-05-11T18:19:06Z">
+        <test-method status="FAIL" signature="filterSuccessful()[pri:5, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="filterSuccessful" duration-ms="7277" started-at="2018-05-11T19:37:45Z" finished-at="2018-05-11T19:37:52Z">
           <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
               <![CDATA[element not visible
@@ -91,10 +91,10 @@
   (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
+System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.50.118', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.170, webStorageEnabled: true}
-Session ID: da2277d9b26ecbd884e5e28c1848862a]]>
+Session ID: fe14f31967bb6d12d899b35861ac4496]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
@@ -102,10 +102,10 @@ Session ID: da2277d9b26ecbd884e5e28c1848862a]]>
   (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
+System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.50.118', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.170, webStorageEnabled: true}
-Session ID: da2277d9b26ecbd884e5e28c1848862a
+Session ID: fe14f31967bb6d12d899b35861ac4496
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,43 +152,43 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterSuccessful -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="172" started-at="2018-05-11T18:19:06Z" finished-at="2018-05-11T18:19:06Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="211" started-at="2018-05-11T19:37:52Z" finished-at="2018-05-11T19:37:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1456" started-at="2018-05-11T18:19:06Z" finished-at="2018-05-11T18:19:08Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1452" started-at="2018-05-11T19:37:53Z" finished-at="2018-05-11T19:37:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="trainerTests()[pri:6, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="trainerTests" duration-ms="11032" started-at="2018-05-11T18:19:08Z" finished-at="2018-05-11T18:19:19Z">
+        <test-method status="PASS" signature="trainerTests()[pri:6, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="trainerTests" duration-ms="11124" started-at="2018-05-11T19:37:54Z" finished-at="2018-05-11T19:38:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- trainerTests -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="143" started-at="2018-05-11T18:19:19Z" finished-at="2018-05-11T18:19:19Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="189" started-at="2018-05-11T19:38:05Z" finished-at="2018-05-11T19:38:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1693" started-at="2018-05-11T18:19:19Z" finished-at="2018-05-11T18:19:21Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="beforeMethod" is-config="true" duration-ms="1514" started-at="2018-05-11T19:38:05Z" finished-at="2018-05-11T19:38:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginAsVpSuccessful()[pri:10, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsVpSuccessful" duration-ms="4559" started-at="2018-05-11T18:19:21Z" finished-at="2018-05-11T18:19:25Z">
+        <test-method status="PASS" signature="loginAsVpSuccessful()[pri:10, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="loginAsVpSuccessful" duration-ms="4632" started-at="2018-05-11T19:38:07Z" finished-at="2018-05-11T19:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsVpSuccessful -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="164" started-at="2018-05-11T18:19:25Z" finished-at="2018-05-11T18:19:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterMethod" is-config="true" duration-ms="192" started-at="2018-05-11T19:38:12Z" finished-at="2018-05-11T19:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-11T18:19:25Z" finished-at="2018-05-11T18:19:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-05-11T18:19:25Z" finished-at="2018-05-11T18:19:25Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-05-11T19:38:12Z" finished-at="2018-05-11T19:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-05-11T18:19:25Z" finished-at="2018-05-11T18:19:25Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-11T19:38:12Z" finished-at="2018-05-11T19:38:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@6500df86]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-05-11T19:38:12Z" finished-at="2018-05-11T19:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
