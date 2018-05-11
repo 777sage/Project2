@@ -28,7 +28,7 @@
         					row.appendChild(quester);
         					
         					let questDate = document.createElement('td');
-        					questDate.innerHTML=request.time;
+        					questDate.innerHTML=request.timestamp;
         					row.appendChild(questDate);
         			        
         			        tableBody2.appendChild(row);

@@ -1,5 +1,6 @@
 package com.revature.util;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -30,7 +31,9 @@ public class HibernateUtil {
 		InputStream in =null;
 		Properties props = new Properties();
 		try {
-			in = new FileInputStream("C:\\GitHUb\\Project2\\Project2\\src\\main\\resources\\hibernate.properties");
+			File hibernateFile = new File("src/main/resources/hibernate.properties");
+			in = new FileInputStream(hibernateFile.getAbsolutePath());
+			//in = new FileInputStream("C:\\GitHUb\\Project2\\Project2\\src\\main\\resources\\hibernate.properties");
 			props.load(in);
 		}catch(IOException fnfe) {
 			fnfe.getMessage();
