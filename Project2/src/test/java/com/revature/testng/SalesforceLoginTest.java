@@ -42,8 +42,8 @@ public class SalesforceLoginTest {
 //  }
   @BeforeMethod
   public void beforeMethod() {
-	  File chrome = new File("src/main/resources/chromedriver");
-//	  File chrome = new File("src/test/resources/chromedriver.exe");
+//	  File chrome = new File("src/main/resources/chromedriver");
+	  File chrome = new File("src/test/resources/chromedriver.exe");
 	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 	  driver = new ChromeDriver();
 	  lp = new LoginPage();
@@ -228,9 +228,12 @@ public class SalesforceLoginTest {
 //	  selectAll.click();
 	  
 //	  filter.click();
-	  
-	  WebElement selectTwoWeeks = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[2]/button/span"));
-	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+//	  WebElement selectTwoWeeks = driver.findElement(By.xpath("//*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[2]/button/span"));
+	  WebElement selectTwoWeeks = driver.findElement(By.cssSelector("#view > div > md-card > md-toolbar > md-menu > button > md-icon"));
+
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
 	  WebElement filterModal = driver.findElement(By.xpath("//*[@id=\"view\"]/div/md-card/md-toolbar/md-menu/button"));
 	  String isExpanded = filterModal.getAttribute("aria-expanded");
@@ -243,7 +246,7 @@ public class SalesforceLoginTest {
 		  System.out.println(e.getMessage());
 	  }
 
-	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  selectTwoWeeks.click();
 
 //	  WebElement filterMenu = driver.findElement(By.xpath("//*[@id=\"menu_container_163\"]"));
@@ -254,6 +257,35 @@ public class SalesforceLoginTest {
 //	  WebElement selectInProgress = driver.findElement(By.xpath("*[@id=\"menu_container_0\"]/md-menu-content/md-menu-item[1]/button/span"));	  
   
 	  
+  }
+  
+  @Test(priority=6)
+  public void trainerTests() {
+	  lp.loginAsTrainer(driver);
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  WebElement trainersTab = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]"));
+	  trainersTab.click();
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	  WebElement firstRow = driver.findElement(By.cssSelector("#view > md-card > md-content:nth-child(2) > md-list > md-list-item:nth-child(1) > div.md-button.md-no-style > button"));
+	  WebElement trainerLabel = driver.findElement(By.xpath("//*[@id=\"view\"]/md-card/md-content[1]/md-list/md-list-item[1]/div[1]/div[1]/div/h3"));
+	  String labelName = trainerLabel.getText();
+	  System.out.println("Trainer Label: " + labelName);
+	  firstRow.click();
+	  
+	  WebElement trainerDetailElement = driver.findElement(By.xpath("//*[@id=\"view\"]/md-card[2]/md-content[1]/div/div[1]/form/md-input-container[1]/h3"));
+	  String trainerDetailElementText = trainerDetailElement.getText();
+	  
+	  try {
+
+		  assertTrue(labelName.contains(trainerDetailElementText));
+		  Service.updateTest("trainerTests", "Success");
+//		  System.out.println(Service.getAllTests());
+	  } catch(Error e) {
+		  Service.updateTest("trainerTests", "Failed");
+		  System.out.println(e.getMessage());
+	  }
   }
   
   @Test(priority=10)
