@@ -1,11 +1,7 @@
 package com.revature.selenium;
 
-import java.io.File;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -13,22 +9,10 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class LocationsPageStepDef {
-	
 	private WebDriver driver;
 
 	public void initializeWebDriver(WebDriver driver) {
 		this.driver = driver;
-	}
-	
-	@When("^Locations tab clicked$")
-	public void locations_tab_clicked() throws Throwable {
-		System.out.println("Inside click locations");
-		driver.findElement(By.className("_md-nav-button-text ng-scope")).click();
-	}
-
-	@Then("^check if the Locations page is open$")
-	public void check_if_the_Locations_page_is_open() throws Throwable {
-		System.out.println("inside then check locations");
 	}
 
 	@Given("^a location$")
@@ -79,5 +63,16 @@ public class LocationsPageStepDef {
 	@Then("^close the test$")
 	public void close_the_test() throws Throwable {
 		System.out.println("inside close the test");
+	}
+	
+	@When("^locations button pressed$")
+	public void locations_button_pressed() throws Throwable {
+		System.out.println("Inside click locations");
+		driver.findElement(By.className("_md-nav-button-text ng-scope")).click();
+	}
+
+	@Then("^check the url$")
+	public void check_the_url() throws Throwable {
+	    System.out.println("inside check url bottom");
 	}
 }

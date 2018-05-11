@@ -1,9 +1,5 @@
 package com.revature.testng;
 
-import org.testng.annotations.Test;
-
-import com.revature.selenium.LoginPage;
-
 import cucumber.api.CucumberOptions;
 
 import org.testng.annotations.BeforeMethod;
@@ -23,7 +19,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
-@CucumberOptions(features="src/test/resources", glue="LocationsPageStepsDef")
+@CucumberOptions(features="src/test/resources", glue="LocationsPageStepDef")
 public class LocationsTestRunner extends AbstractTestNGCucumberTests {
 	
 //	@Test(dataProvider = "dp")
