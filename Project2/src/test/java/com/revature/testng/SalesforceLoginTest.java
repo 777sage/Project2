@@ -119,10 +119,10 @@ public class SalesforceLoginTest {
 //	  assertEquals(loginPageTitle, "Login | Salesforce"); 
 	  try {
 		  assertEquals(loginPageTitle, "Login | Salesforce"); 
-		  //Service.updateTest("findLoginPageSuccessful", "Success");
+		  Service.updateTest("findLoginPageSuccessful", "Success");
 //		  System.out.println(Service.getAllTests());
 	  } catch(Error e) {
-		  //Service.updateTest("findLoginPageSuccessful", "Failed");
+		  Service.updateTest("findLoginPageSuccessful", "Failed");
 		  System.out.println(e.getMessage());
 	  }
   }
@@ -136,10 +136,10 @@ public class SalesforceLoginTest {
 //	  assertTrue(passwordMessageShown);
 	  try {
 		  assertTrue(passwordMessageShown);
-//		  Service.updateTest("loginAsTrainerWithWrongCredentials", "Success");
+		  Service.updateTest("loginAsTrainerWithWrongCredentials", "Success");
 //		  System.out.println(Service.getAllTests());
 	  } catch(Error e) {
-//		  Service.updateTest("loginAsTrainerWithWrongCredentials", "Failed");
+		  Service.updateTest("loginAsTrainerWithWrongCredentials", "Failed");
 		  System.out.println(e.getMessage());
 	  }
   }
@@ -342,6 +342,23 @@ public class SalesforceLoginTest {
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  selectTwoWeeks.click();
  	  
+  }
+  
+  @Test(priority=9)
+  public void findLoginPageSuccessfulAgain() {  
+//	  wd.get("https://dev.assignforce.revaturelabs.com");
+//	  System.out.println(loginPageTitle);
+	  lp.findLoginPage(driver);
+	  String loginPageTitle = lp.getTitle(driver);
+//	  assertEquals(loginPageTitle, "Login | Salesforce"); 
+	  try {
+		  assertEquals(loginPageTitle, "Login | Salesforce"); 
+//		  Service.updateTest("findLoginPageSuccessful", "Success");
+//		  System.out.println(Service.getAllTests());
+	  } catch(Error e) {
+//		  Service.updateTest("findLoginPageSuccessful", "Failed");
+		  System.out.println(e.getMessage());
+	  }
   }
   
 
