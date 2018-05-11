@@ -49,7 +49,7 @@ public class Test {
 	}	
 	@Override
 	public String toString() {
-		return "Test [tid=" + tid + ", testName=" + testName + ", status=" + status + "]";
+		return "Test [tid=" + tid + ", testName=" + testName + ", status=" + status + "time="+ timestamp+"]";
 	}
 	@Override
 	public int hashCode() {
