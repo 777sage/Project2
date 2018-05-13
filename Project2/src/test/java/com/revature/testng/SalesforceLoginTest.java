@@ -44,7 +44,7 @@ public class SalesforceLoginTest {
 //  }
   @BeforeMethod
   public void beforeMethod() {
-	  options = new ChromeOptions()
+	  options = new ChromeOptions();
 	  options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
 	  options.addArguments("--start-maximized");
 	  
