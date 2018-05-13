@@ -36,7 +36,7 @@ public class SalesforceLoginTest {
 	String trainerUsername;
 	String trainerPassword;
 	Service service;
-//	ChromeOptions options;
+	ChromeOptions options;
 	
 	
 //  @Test(dataProvider = "dp")
