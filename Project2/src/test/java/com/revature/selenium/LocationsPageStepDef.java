@@ -6,7 +6,6 @@ import static org.testng.Assert.assertTrue;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.revature.dao.Service;
@@ -50,8 +49,8 @@ public class LocationsPageStepDef {
 			System.out.println("Location exists success");
 	    	Service.updateTest("Location Revature exists", "Success");
 		}catch (Error e) {
-			System.out.println("No Revature location button, Fail");
-	    	Service.updateTest("Location Revature exists", "Fail");
+			System.out.println("No Revature location button, Failed");
+	    	Service.updateTest("Location Revature exists", "Failed");
 		}
 		ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
@@ -71,8 +70,8 @@ public class LocationsPageStepDef {
 			System.out.println("Building exists, Success");
 	    	Service.updateTest("Revature building exists", "Success");
 		}catch (Error e) {
-			System.out.println("No Revature building button, fail");
-	    	Service.updateTest("Revature building exists", "Fail");
+			System.out.println("No Revature building button, Failed");
+	    	Service.updateTest("Revature building exists", "Failed");
 		}
 		ServiceHooks.driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
@@ -87,8 +86,8 @@ public class LocationsPageStepDef {
 			System.out.println("Room exists, success");
 	    	Service.updateTest("Revature room exists", "Success");
 		}catch (Error e) {
-			System.out.println("No Revature location button, fail");
-	    	Service.updateTest("Revature room exists", "Fail");
+			System.out.println("No Revature location button, Failed");
+	    	Service.updateTest("Revature room exists", "Failed");
 		}
 		ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
@@ -124,7 +123,7 @@ public class LocationsPageStepDef {
 	    	
 	    } catch(Error e) {
 	    	System.out.println("Non-matching URL's");
-	    	Service.updateTest("Check login URL", "Fail");
+	    	Service.updateTest("Check login URL", "Failed");
 	    }
 	}
 
@@ -158,7 +157,7 @@ public class LocationsPageStepDef {
 	    	
 	    } catch(Error e) {
 	    	System.out.println("Non-matching URL's");
-	    	Service.updateTest("Check locations URL", "Fail");
+	    	Service.updateTest("Check locations URL", "Failed");
 	    }
 	}
 }

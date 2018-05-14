@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1451" started-at="2018-05-11T15:25:46Z" finished-at="2018-05-11T15:25:47Z">
+  <suite name="Default suite" duration-ms="1454" started-at="2018-05-11T19:00:03Z" finished-at="2018-05-11T19:00:04Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="1451" started-at="2018-05-11T15:25:46Z" finished-at="2018-05-11T15:25:47Z">
+    <test name="Default test" duration-ms="1454" started-at="2018-05-11T19:00:03Z" finished-at="2018-05-11T19:00:04Z">
       <class name="com.revature.testng.LocationsTestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="setUpClass" is-config="true" duration-ms="951" started-at="2018-05-11T15:25:46Z" finished-at="2018-05-11T15:25:47Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="setUpClass" is-config="true" duration-ms="949" started-at="2018-05-11T19:00:03Z" finished-at="2018-05-11T19:00:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="feature" duration-ms="32" started-at="2018-05-11T15:25:47Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-05-11T15:25:47Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="feature" duration-ms="31" started-at="2018-05-11T19:00:04Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-05-11T19:00:04Z">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="tearDownClass" is-config="true" duration-ms="99" started-at="2018-05-11T15:25:47Z" finished-at="2018-05-11T15:25:47Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="tearDownClass" is-config="true" duration-ms="85" started-at="2018-05-11T19:00:04Z" finished-at="2018-05-11T19:00:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

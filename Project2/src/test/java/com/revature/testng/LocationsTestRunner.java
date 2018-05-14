@@ -2,22 +2,7 @@ package com.revature.testng;
 
 import cucumber.api.CucumberOptions;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.BeforeClass;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.Properties;
 import cucumber.api.testng.*;
-import org.junit.runner.RunWith;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.AfterTest;
 
 @CucumberOptions(features="src/test/resources", glue="LocationsPageStepDef")
 public class LocationsTestRunner extends AbstractTestNGCucumberTests {
