@@ -8,10 +8,8 @@
           <include name="afterClass"/>
           <include name="dp"/>
           <include name="afterTest"/>
-          <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="beforeClass"/>
-          <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.revature.testng.ProfileTests -->
     </classes>

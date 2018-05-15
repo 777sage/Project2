@@ -1,15 +1,35 @@
 package com.revature.selenium;
 
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProfilePage {
 	
 	public String[] enterNameInputAndChangePage(WebDriver driver) {
-		  WebElement profileSpan = driver.findElement(By.xpath("//span[contains(text(), 'rofile')]"));
+//		  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		  WebDriverWait wait = new WebDriverWait(driver, 15);
+		  
+		  WebElement profileSpan;
+		  try{
+			    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'rofile')]")));
+			    profileSpan = driver.findElement(By.xpath("//span[contains(text(), 'rofile')]"));
+			}
+			catch (NoSuchElementException e)
+			{
+			    System.out.println(e.getMessage());
+			    profileSpan = null;
+			}
+		
 
-		  for (int i = 0 ; i < 1000 ; i++) {
+		  for (int i = 0 ; i < 3 ; i++) {
 			  if (profileSpan == null) {
 				  profileSpan = driver.findElement(By.xpath("//span[contains(text(), 'rofile')]"));
 			  }
@@ -49,4 +69,16 @@ public class ProfilePage {
 		  result[1] = nameAfterPageChange;
 		  return result;
 	}
+	
+	public int addOneSkill(WebDriver driver) {
+		  
+		  WebElement currentSkills = driver.findElement(By.cssSelector("#view > md-card:nth-child(1) > md-content:nth-child(3) > div > md-list > div"));
+		  WebElement skill = currentSkills.findElement(By.xpath("following-sibling::*"));
+		  skill.click();
+		  
+		  List<WebElement> chipElements = driver.findElements(By.className("md-chip-content"));
+		  return chipElements.size();
+	}
+	
+
 }

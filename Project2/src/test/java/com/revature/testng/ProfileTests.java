@@ -5,6 +5,7 @@ import static org.testng.Assert.assertNotEquals;
 
 
 import java.io.File;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -32,7 +33,6 @@ public class ProfileTests {
 
   @Test
   public void afterMethod() {
-    throw new RuntimeException("Test not implemented");
   }
 
   @Test
@@ -52,7 +52,7 @@ public class ProfileTests {
 
   @Test
   public void beforeMethod() {
-    throw new RuntimeException("Test not implemented");
+
   }
 
   @Test
@@ -76,7 +76,7 @@ public class ProfileTests {
   }
   
   @Test(priority=1)
-  public void profileNameInputDoesNotSave() {
+  public void loginSuccessful() {
 	  File chrome = new File("src/main/resources/chromedriver");
 //	  File chrome = new File("src/test/resources/chromedriver.exe");
 	  
@@ -85,8 +85,20 @@ public class ProfileTests {
 	  driver = new ChromeDriver();
 	  lp = new LoginPage();
 	  pp = new ProfilePage();
-	  
 	  lp.loginAsTrainer(driver);
+  }
+  
+  @Test(priority=2)
+  public void profileNameInputDoesNotSave() {
+//	  File chrome = new File("src/main/resources/chromedriver");
+//	  File chrome = new File("src/test/resources/chromedriver.exe");
+	  
+//	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
+//	  
+//	  driver = new ChromeDriver();
+//	  lp = new LoginPage();
+//	  pp = new ProfilePage();
+	  
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
 	  String[] result = pp.enterNameInputAndChangePage(driver);
@@ -95,6 +107,18 @@ public class ProfileTests {
 	  
 	  assertNotEquals(nameBeforePageChange, nameAfterPageChange);
 
+  }
+  
+  @Test(priority=3)
+  public void addOneSkillSuccessful() {
+	  List<WebElement> chipElements = driver.findElements(By.className("md-chip-content"));
+	  int chipElementsCountBeforeClick = chipElements.size();
+	  
+	  int chipElementsCountAfterClick = pp.addOneSkill(driver);
+
+	  assertEquals(chipElementsCountBeforeClick, 8);
+	  assertEquals(chipElementsCountAfterClick, 10);
+	  
 	  driver.quit();
   }
 }
