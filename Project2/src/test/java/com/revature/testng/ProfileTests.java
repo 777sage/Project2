@@ -2,7 +2,7 @@ package com.revature.testng;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
-
+import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.util.List;
@@ -115,10 +115,68 @@ public class ProfileTests {
 	  int chipElementsCountBeforeClick = chipElements.size();
 	  
 	  int chipElementsCountAfterClick = pp.addOneSkill(driver);
+	  
+	  int expectedIncreaseInElements = chipElementsCountBeforeClick + 2;
 
-	  assertEquals(chipElementsCountBeforeClick, 8);
-	  assertEquals(chipElementsCountAfterClick, 10);
+	  assertEquals(chipElementsCountAfterClick, expectedIncreaseInElements);
+	  
+  }
+  
+  @Test(priority=4)
+  public void addMultipleSkillsSuccessful() {
+	  List<WebElement> chipElements = driver.findElements(By.className("md-chip-content"));
+	  int chipElementsCountBeforeClicks = chipElements.size();
+//	  System.out.println("Chip elements count before clicks: " + chipElementsCountBeforeClicks);
+	  
+	  int chipElementsCountAfterClicks = pp.addMultipleSkills(driver);
+//	  System.out.println("Chip elements count after clicks: " + chipElementsCountAfterClicks);
+	  
+	  int expectedIncreaseInElements = chipElementsCountBeforeClicks + 20;
+	  
+	  assertEquals(chipElementsCountAfterClicks, expectedIncreaseInElements);
+	  
+  }
+  
+  @Test(priority=5)
+  public void unsavedSkillsDoNotPersist() {
+	  List<WebElement> chipElements = driver.findElements(By.className("md-chip-content"));
+	  int chipElementsCountBeforePageChange = chipElements.size();
+//	  System.out.println("Chip elements count before navigate Away: " + chipElementsCountBeforePageChange);
+	  
+	  pp.navigateAwayAndBack(driver);
+	  
+	  chipElements = driver.findElements(By.className("md-chip-content"));
+	  int chipElementsCountAfterPageChange = chipElements.size();
+//	  System.out.println("Chip elements count After navigate Away: " + chipElementsCountAfterPageChange);
+	  
+	  boolean changesUnsaved = chipElementsCountAfterPageChange < chipElementsCountBeforePageChange;
+	  assertTrue(changesUnsaved);
+	  
+  }
+  
+  @Test(priority=6)
+  public void addMultipleSkillsAndSaveSuccessful() {
+	  List<WebElement> chipElements = driver.findElements(By.className("md-chip-content"));
+	  int chipElementsCountBeforeClicks = chipElements.size();
+	  System.out.println("Chip elements count before clicks: " + chipElementsCountBeforeClicks);
+	  
+	  int chipElementsCountAfterClicks = pp.addMultipleSkills(driver);
+	  System.out.println("Chip elements count after clicks: " + chipElementsCountAfterClicks);
+	  
+	  pp.clickSaveSkillsButton(driver);
+	  
+	  pp.logout(driver);
+	  
+	  lp.loginAsTrainer(driver);
+	  pp.goToProfilePage(driver);
+	  
+	  chipElements = driver.findElements(By.className("md-chip-content"));
+	  int chipElementsCountAfterLoggedBackIn = chipElements.size();
+	  System.out.println("Count after logged back in: " + chipElementsCountAfterLoggedBackIn);
+	  
+	  assertEquals(chipElementsCountAfterClicks, chipElementsCountAfterLoggedBackIn);
 	  
 	  driver.quit();
   }
+  
 }
