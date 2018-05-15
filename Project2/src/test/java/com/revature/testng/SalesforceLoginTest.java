@@ -46,8 +46,8 @@ public class SalesforceLoginTest {
   public void beforeMethod() {
 //	  options = new ChromeOptions().addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
 	  
-//	  File chrome = new File("src/main/resources/chromedriver");
-	  File chrome = new File("src/test/resources/chromedriver.exe");
+	  File chrome = new File("src/main/resources/chromedriver");
+//	  File chrome = new File("src/test/resources/chromedriver.exe");
 	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 	  
 	  
