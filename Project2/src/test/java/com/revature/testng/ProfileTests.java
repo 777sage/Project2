@@ -1,5 +1,9 @@
 package com.revature.testng;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
+
+
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
@@ -11,10 +15,12 @@ import org.testng.annotations.Test;
 
 import com.revature.dao.Service;
 import com.revature.selenium.LoginPage;
+import com.revature.selenium.ProfilePage;
 
 public class ProfileTests {
 	WebDriver driver;
 	LoginPage lp;
+	ProfilePage pp;
 	String trainerUsername;
 	String trainerPassword;
 	Service service;
@@ -70,68 +76,25 @@ public class ProfileTests {
   }
   
   @Test(priority=1)
-  public void loginAsTrainerSuccessful() {
+  public void profileNameInputDoesNotSave() {
 	  File chrome = new File("src/main/resources/chromedriver");
 //	  File chrome = new File("src/test/resources/chromedriver.exe");
+	  
 	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 	  
 	  driver = new ChromeDriver();
 	  lp = new LoginPage();
+	  pp = new ProfilePage();
 	  
 	  lp.loginAsTrainer(driver);
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  WebElement profileSpan = driver.findElement(By.xpath("//span[contains(text(), 'rofile')]"));
 	  
-	  for (int i = 0 ; i < 10000 ; i++) {
-		  if (profileSpan == null) {
-			  profileSpan = driver.findElement(By.xpath("//span[contains(text(), 'rofile')]"));
-		  }
-	  }
-	  profileSpan.click();
-		  
+	  String[] result = pp.enterNameInputAndChangePage(driver);
+	  String nameBeforePageChange = result[0];
+	  String nameAfterPageChange = result[1];
 	  
-//	  WebElement profileSpan = driver.findElement(By.cssSelector("body > div > div:nth-child(1) > ng-include > div > md-content > md-nav-bar > div > nav > ul > li:nth-child(7) > a > span > span"));
-//	  for (int i = 0 ; i < 2 ; i++) {
-//		  profileSpan.click();
-//	  }
-		  
-	  WebElement inputOne = driver.findElement(By.id("input_1"));
-	  inputOne.clear();
-	  inputOne.sendKeys("William");
-	  
-	  WebElement inputTwo = driver.findElement(By.id("input_2"));
-	  inputTwo.clear();
-	  inputTwo.sendKeys("Gibson");
-	  
-	  String firstNameBeforePageChange = inputOne.getText();
-	  String lastNameBeforePageChange = inputTwo.getText();
-	  System.out.println("Name before page change: " + (firstNameBeforePageChange + lastNameBeforePageChange));
-	  
-	  WebElement locationSpan = driver.findElement(By.xpath("//span[contains(text(), 'ocations')]"));
-	  locationSpan.click();
-	  profileSpan.click();
-	  
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  
-	  for (int i = 0 ; i < 10000 ; i++) {
-		  inputOne = driver.findElement(By.id("input_1"));
-		  inputTwo = driver.findElement(By.id("input_2"));
-	  }
-	  
-	  String firstNameAfterPageChange = inputOne.getText();
-	  String lastNameAfterPageChange = inputTwo.getText();
-	  System.out.println("Name after page change: " + (firstNameAfterPageChange + lastNameAfterPageChange));
-	  
-	  
-//	  WebElement locationsTab = driver.findElement(By.cssSelector("body > div > div:nth-child(1) > ng-include > div > md-content > md-nav-bar > div > nav > ul > li:nth-child(4) > a > span > span"));
-//	  for (int i = 0 ; i < 2 ; i++) {
-//		  locationsTab.click();
-//	  }
-//	  
-//	  for (int i = 0 ; i < 2 ; i++) {
-//		  profileSpan.click();
-//	  }
-//	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//	  driver.quit();
+	  assertNotEquals(nameBeforePageChange, nameAfterPageChange);
+
+	  driver.quit();
   }
 }

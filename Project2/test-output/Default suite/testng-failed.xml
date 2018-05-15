@@ -7,7 +7,6 @@
         <methods>
           <include name="afterClass"/>
           <include name="dp"/>
-          <include name="loginAsTrainerSuccessful"/>
           <include name="afterTest"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
