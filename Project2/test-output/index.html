@@ -434,16 +434,15 @@
                   <a name="loginAsTrainerSuccessful">
                   </a> <!-- loginAsTrainerSuccessful -->
                   <span class="method-name">loginAsTrainerSuccessful</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=66.0.3359.170)
   (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;Andrews-MacBook-Pro.local&apos;, ip: &apos;192.168.60.193&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.170, webStorageEnabled: true}
-Session ID: 3d014b660e2bf0aa3f32535bc6604cf7
+Session ID: 5d6183157ba5afcf7f8e86e8b10dba23
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -457,8 +456,8 @@ Session ID: 3d014b660e2bf0aa3f32535bc6604cf7
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-	at com.revature.testng.ProfileTests.loginAsTrainerSuccessful(ProfileTests.java:108)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.revature.testng.ProfileTests.loginAsTrainerSuccessful(ProfileTests.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -515,7 +514,7 @@ Session ID: 3d014b660e2bf0aa3f32535bc6604cf7
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/g5/gyqfq14d78x70gbdbxyv60m00000gn/T/testng-eclipse-1223847158/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/g5/gyqfq14d78x70gbdbxyv60m00000gn/T/testng-eclipse--1742699093/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -568,39 +567,39 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginAsTrainerSuccessful')
 data.setCell(0, 2, 'com.revature.testng.ProfileTests')
-data.setCell(0, 3, 14111);
+data.setCell(0, 3, 10547);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'afterClass')
 data.setCell(1, 2, 'com.revature.testng.ProfileTests')
-data.setCell(1, 3, 20);
+data.setCell(1, 3, 15);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'beforeTest')
 data.setCell(2, 2, 'com.revature.testng.ProfileTests')
-data.setCell(2, 3, 11);
+data.setCell(2, 3, 12);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'afterSuite')
+data.setCell(3, 1, 'dp')
 data.setCell(3, 2, 'com.revature.testng.ProfileTests')
-data.setCell(3, 3, 9);
+data.setCell(3, 3, 7);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'beforeSuite')
+data.setCell(4, 1, 'afterSuite')
 data.setCell(4, 2, 'com.revature.testng.ProfileTests')
-data.setCell(4, 3, 6);
+data.setCell(4, 3, 5);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'beforeMethod')
 data.setCell(5, 2, 'com.revature.testng.ProfileTests')
-data.setCell(5, 3, 6);
+data.setCell(5, 3, 5);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'dp')
+data.setCell(6, 1, 'beforeSuite')
 data.setCell(6, 2, 'com.revature.testng.ProfileTests')
-data.setCell(6, 3, 3);
+data.setCell(6, 3, 4);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'afterMethod')
+data.setCell(7, 1, 'afterTest')
 data.setCell(7, 2, 'com.revature.testng.ProfileTests')
-data.setCell(7, 3, 3);
+data.setCell(7, 3, 4);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'afterTest')
+data.setCell(8, 1, 'afterMethod')
 data.setCell(8, 2, 'com.revature.testng.ProfileTests')
-data.setCell(8, 3, 2);
+data.setCell(8, 3, 3);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'beforeClass')
 data.setCell(9, 2, 'com.revature.testng.ProfileTests')
@@ -609,7 +608,7 @@ window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -646,51 +645,51 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">36 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">48 ms</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">afterTest</span>
-                <span class="method-start">64 ms</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">77 ms</span>
+                <span class="method-start">70 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">84 ms</span>
+                <span class="method-start">77 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">110 ms</span>
+                <span class="method-start">88 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">126 ms</span>
+                <span class="method-start">100 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">dp</span>
-                <span class="method-start">147 ms</span>
+                <span class="method-start">121 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginAsTrainerSuccessful</span>
-                <span class="method-start">161 ms</span>
+                <span class="method-start">143 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

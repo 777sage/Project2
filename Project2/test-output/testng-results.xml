@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="8" ignored="0" total="10" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14320" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:31:13Z">
+  <suite name="Default suite" duration-ms="10732" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14320" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:31:13Z">
+    <test name="Default test" duration-ms="10732" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:26Z">
       <class name="com.revature.testng.ProfileTests">
-        <test-method status="FAIL" signature="afterClass()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="afterClass" duration-ms="20" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="FAIL" signature="afterClass()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="afterClass" duration-ms="15" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -46,7 +46,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="FAIL" signature="afterMethod()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="afterMethod" duration-ms="3" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="FAIL" signature="afterMethod()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="afterMethod" duration-ms="3" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -85,11 +85,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="afterSuite" duration-ms="9" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="afterSuite" duration-ms="5" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="afterTest" duration-ms="2" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="afterTest" duration-ms="4" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -128,7 +128,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="beforeClass" duration-ms="2" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="beforeClass" duration-ms="2" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -167,7 +167,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="beforeMethod" duration-ms="6" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="beforeMethod" duration-ms="5" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -206,11 +206,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="beforeSuite" duration-ms="6" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="beforeSuite" duration-ms="4" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="beforeTest" duration-ms="11" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="beforeTest" duration-ms="12" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -249,7 +249,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="dp()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="dp" duration-ms="3" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:30:59Z">
+        <test-method status="FAIL" signature="dp()[pri:0, instance:com.revature.testng.ProfileTests@204f30ec]" name="dp" duration-ms="7" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:15Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -288,31 +288,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dp -->
-        <test-method status="FAIL" signature="loginAsTrainerSuccessful()[pri:1, instance:com.revature.testng.ProfileTests@204f30ec]" name="loginAsTrainerSuccessful" duration-ms="14111" started-at="2018-05-15T13:30:59Z" finished-at="2018-05-15T13:31:13Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="FAIL" signature="loginAsTrainerSuccessful()[pri:1, instance:com.revature.testng.ProfileTests@204f30ec]" name="loginAsTrainerSuccessful" duration-ms="10547" started-at="2018-05-15T14:01:15Z" finished-at="2018-05-15T14:01:26Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+              <![CDATA[element not visible
   (Session info: chrome=66.0.3359.170)
   (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.170, webStorageEnabled: true}
-Session ID: 3d014b660e2bf0aa3f32535bc6604cf7]]>
+Session ID: 5d6183157ba5afcf7f8e86e8b10dba23]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=66.0.3359.170)
   (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.170, webStorageEnabled: true}
-Session ID: 3d014b660e2bf0aa3f32535bc6604cf7
+Session ID: 5d6183157ba5afcf7f8e86e8b10dba23
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -326,8 +324,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-at com.revature.testng.ProfileTests.loginAsTrainerSuccessful(ProfileTests.java:108)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at com.revature.testng.ProfileTests.loginAsTrainerSuccessful(ProfileTests.java:90)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -355,7 +353,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsTrainerSuccessful -->

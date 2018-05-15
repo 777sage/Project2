@@ -80,9 +80,15 @@ public class ProfileTests {
 	  
 	  lp.loginAsTrainer(driver);
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  
 	  WebElement profileSpan = driver.findElement(By.xpath("//span[contains(text(), 'rofile')]"));
+	  
+	  for (int i = 0 ; i < 10000 ; i++) {
+		  if (profileSpan == null) {
+			  profileSpan = driver.findElement(By.xpath("//span[contains(text(), 'rofile')]"));
+		  }
+	  }
 	  profileSpan.click();
+		  
 	  
 //	  WebElement profileSpan = driver.findElement(By.cssSelector("body > div > div:nth-child(1) > ng-include > div > md-content > md-nav-bar > div > nav > ul > li:nth-child(7) > a > span > span"));
 //	  for (int i = 0 ; i < 2 ; i++) {
@@ -104,6 +110,13 @@ public class ProfileTests {
 	  WebElement locationSpan = driver.findElement(By.xpath("//span[contains(text(), 'ocations')]"));
 	  locationSpan.click();
 	  profileSpan.click();
+	  
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  for (int i = 0 ; i < 10000 ; i++) {
+		  inputOne = driver.findElement(By.id("input_1"));
+		  inputTwo = driver.findElement(By.id("input_2"));
+	  }
 	  
 	  String firstNameAfterPageChange = inputOne.getText();
 	  String lastNameAfterPageChange = inputTwo.getText();
