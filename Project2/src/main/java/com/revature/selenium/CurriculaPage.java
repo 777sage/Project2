@@ -15,8 +15,6 @@ public class CurriculaPage {
     public void goToCurriculaPage() {
         WebElement profileNavButton = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[4]"));
         profileNavButton.click();
-//        WebDriverWait wait = new WebDriverWait(driver, 15);
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[4]")))
     }
 
     public WebElement getCoreCurriculumList() {
@@ -29,7 +27,6 @@ public class CurriculaPage {
 
     public boolean isCoreCurriculumVisible() {
         WebElement listHolder = driver.findElement(By.xpath("//*[@id=\"core\"]"));
-        System.out.println(listHolder.isDisplayed() +" core display is "+listHolder.getCssValue("display"));
         return (!listHolder.getCssValue("display").equals("none"));
     }
 
@@ -39,7 +36,6 @@ public class CurriculaPage {
     }
 
     public void toggleCoreCurriculumVisibility() {
-        System.out.println("toggle core vis");
         WebElement coreToggleButton = driver.findElement(By.xpath("//*[@id=\"view\"]/md-card/md-content/md-card[1]/md-toolbar/div/button"));
         coreToggleButton.click();
     }

@@ -6,10 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.io.File;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -29,23 +32,16 @@ public class CurriculaTest {
         cp = new CurriculaPage(driver);
 
         lp.findLoginPage(driver);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         lp.loginAsTrainer(driver);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         cp.goToCurriculaPage();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterClass
     public void finishClassTests() {
         driver.quit();
     }
-
-//    @BeforeMethod
-//    public void BeforeEachTest() {
-//        // go to overview too
-//        cp.goToCurriculaPage();
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//    }
 
     @Test
     public void coreCurriclaLoadedTest() {
@@ -61,6 +57,7 @@ public class CurriculaTest {
         // should be visible on page load
         Assert.assertTrue(cp.isCoreCurriculumVisible());
         cp.toggleCoreCurriculumVisibility();
+        // wait for an animation that takes 1 second
         Thread.sleep(2000);
         Assert.assertFalse(cp.isCoreCurriculumVisible());
 
