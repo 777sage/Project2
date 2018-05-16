@@ -68,23 +68,12 @@
 			<type>pom</type>
 		</dependency>
 		
-		<dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc7</artifactId>
-            <version>12.1.0</version>
-<<<<<<< HEAD
-        </dependency> -->
-
-
-        
+      
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc7</artifactId>
             <version>12.1.0.1</version>
 		</dependency>
-
-=======
-        </dependency> 
         
         <dependency>
 			<groupId>info.cukes</groupId>
@@ -123,7 +112,6 @@
         	<artifactId>javax.servlet-api</artifactId>
         	<version>3.1.0</version>
         </dependency>
->>>>>>> new-mitch-branch
 		
 	</dependencies>
   <build>

@@ -44,9 +44,9 @@ public class SalesforceLoginTest {
 //  }
   @BeforeMethod
   public void beforeMethod() {
-	  options = new ChromeOptions();
-	  options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
-	  options.addArguments("--start-maximized");
+//	  options = new ChromeOptions();
+//	  options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
+//	  options.addArguments("--start-maximized");
 	  
 //	  File chrome = new File("src/main/resources/chromedriver");
 	  File chrome = new File("src/test/resources/chromedriver.exe");
@@ -54,9 +54,9 @@ public class SalesforceLoginTest {
 	  
 	  
 // 	  driver = new ChromeDriver();
-// 	  driver = new ChromeDriver();
+ 	  driver = new ChromeDriver();
 
-	  driver = new ChromeDriver(options);
+//	  driver = new ChromeDriver(options);
 	  lp = new LoginPage();
   }
 

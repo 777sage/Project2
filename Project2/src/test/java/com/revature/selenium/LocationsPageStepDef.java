@@ -1,6 +1,6 @@
 package com.revature.selenium;
 
-import static org.junit.Assert.assertNotNull;
+import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.revature.dao.Service;
-import com.revature.serviceHooks.ServiceHooks;
+//import com.revature.serviceHooks.ServiceHooks;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
