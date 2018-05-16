@@ -55,11 +55,19 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
 </tr><tr>
 <td>Started on:</td><td>Wed May 16 10:11:04 EDT 2018</td>
 </tr>
 <tr><td>Total time:</td><td>94 seconds (94392 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 16 14:34:07 EDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (774 ms)</td>
+>>>>>>> pre-integration
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,13 +76,14 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.revature.testng.SalesforceLoginTest.trainerTests()'><b>trainerTests</b><br>Test class: com.revature.testng.SalesforceLoginTest</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;li class=&quot;md-nav-item ng-scope ng-isolate-scope layout-align-end-end&quot; role=&quot;option&quot; aria-selected=&quot;false&quot; md-nav-href=&quot;trainers&quot; name=&quot;trainers&quot; layout-align=&quot;end end&quot;&gt;...&lt;/li&gt; is not clickable at point (705, 60). Other element would receive the click: &lt;md-content class=&quot;md-padding _md&quot;&gt;...&lt;/md-content&gt;
   (Session info: chrome=66.0.3359.181)
@@ -100,10 +109,24 @@ Session ID: d40c3628b526c03aa9c43c39e71eb1da
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at com.revature.testng.SalesforceLoginTest.trainerTests(SalesforceLoginTest.java:266)
+=======
+<td title='com.revature.testng.LocationsTestRunner.tearDownClass()'><b>tearDownClass</b><br>Test class: com.revature.testng.LocationsTestRunner</td>
+<td><div><pre>java.lang.IllegalArgumentException: Cannot create function name from empty sentence
+	at cucumber.runtime.snippets.FunctionNameGenerator.removeIllegalCharacters(FunctionNameGenerator.java:22)
+	at cucumber.runtime.snippets.FunctionNameGenerator.generateFunctionName(FunctionNameGenerator.java:13)
+	at cucumber.runtime.snippets.SnippetGenerator.functionName(SnippetGenerator.java:76)
+	at cucumber.runtime.snippets.SnippetGenerator.getSnippet(SnippetGenerator.java:45)
+	at cucumber.runtime.java.JavaBackend.getSnippet(JavaBackend.java:145)
+	at cucumber.runtime.UndefinedStepsTracker.getSnippets(UndefinedStepsTracker.java:32)
+	at cucumber.runtime.Runtime.getSnippets(Runtime.java:194)
+	at cucumber.runtime.DefaultSummaryPrinter.printSnippets(DefaultSummaryPrinter.java:36)
+	at cucumber.runtime.DefaultSummaryPrinter.print(DefaultSummaryPrinter.java:21)
+>>>>>>> pre-integration
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
+<<<<<<< HEAD
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -150,16 +173,27 @@ Session ID: d40c3628b526c03aa9c43c39e71eb1da
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at com.revature.testng.SalesforceLoginTest.trainerTests(SalesforceLoginTest.java:266)
+=======
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:294)
+	at com.sun.proxy.$Proxy10.print(Unknown Source)
+	at cucumber.runtime.Runtime.printSummary(Runtime.java:132)
+	at cucumber.api.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:78)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:34)
+>>>>>>> pre-integration
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -175,6 +209,7 @@ Session ID: d40c3628b526c03aa9c43c39e71eb1da
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
 </pre></div></td>
 <td>6</td>
 <td>com.revature.testng.SalesforceLoginTest@5bcab519</td></tr>
@@ -204,10 +239,24 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at com.revature.testng.SalesforceLoginTest.vpFilterSuccessful(SalesforceLoginTest.java:347)
+=======
+</pre></div><a href='#' onClick='toggleBox("stack-trace1991371192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1991371192'><pre>java.lang.IllegalArgumentException: Cannot create function name from empty sentence
+	at cucumber.runtime.snippets.FunctionNameGenerator.removeIllegalCharacters(FunctionNameGenerator.java:22)
+	at cucumber.runtime.snippets.FunctionNameGenerator.generateFunctionName(FunctionNameGenerator.java:13)
+	at cucumber.runtime.snippets.SnippetGenerator.functionName(SnippetGenerator.java:76)
+	at cucumber.runtime.snippets.SnippetGenerator.getSnippet(SnippetGenerator.java:45)
+	at cucumber.runtime.java.JavaBackend.getSnippet(JavaBackend.java:145)
+	at cucumber.runtime.UndefinedStepsTracker.getSnippets(UndefinedStepsTracker.java:32)
+	at cucumber.runtime.Runtime.getSnippets(Runtime.java:194)
+	at cucumber.runtime.DefaultSummaryPrinter.printSnippets(DefaultSummaryPrinter.java:36)
+	at cucumber.runtime.DefaultSummaryPrinter.print(DefaultSummaryPrinter.java:21)
+>>>>>>> pre-integration
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
+<<<<<<< HEAD
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -254,16 +303,27 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at com.revature.testng.SalesforceLoginTest.vpFilterSuccessful(SalesforceLoginTest.java:347)
+=======
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:294)
+	at com.sun.proxy.$Proxy10.print(Unknown Source)
+	at cucumber.runtime.Runtime.printSummary(Runtime.java:132)
+	at cucumber.api.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:78)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:34)
+>>>>>>> pre-integration
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -280,8 +340,8 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>6</td>
-<td>com.revature.testng.SalesforceLoginTest@5bcab519</td></tr>
+<td>0</td>
+<td>com.revature.testng.LocationsTestRunner@192b07fd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -291,6 +351,7 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.revature.testng.SalesforceLoginTest.filterSuccessful()'><b>filterSuccessful</b><br>Test class: com.revature.testng.SalesforceLoginTest</td>
 <td></td>
 <td>6</td>
@@ -317,17 +378,26 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
 <td>com.revature.testng.SalesforceLoginTest@5bcab519</td></tr>
 <tr>
 <td title='com.revature.testng.SalesforceLoginTest.loginAsTrainerWithWrongCredentials()'><b>loginAsTrainerWithWrongCredentials</b><br>Test class: com.revature.testng.SalesforceLoginTest</td>
+=======
+<td title='com.revature.testng.LocationsTestRunner.feature()'><b>feature</b><br>Test class: com.revature.testng.LocationsTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Examine the core curricula and focuses of Revature</td>
+>>>>>>> pre-integration
 <td></td>
-<td>4</td>
-<td>com.revature.testng.SalesforceLoginTest@5bcab519</td></tr>
+<td>0</td>
+<td>com.revature.testng.LocationsTestRunner@192b07fd</td></tr>
 <tr>
-<td title='com.revature.testng.SalesforceLoginTest.loginAsVpSuccessful()'><b>loginAsVpSuccessful</b><br>Test class: com.revature.testng.SalesforceLoginTest</td>
+<td title='com.revature.testng.LocationsTestRunner.feature()'><b>feature</b><br>Test class: com.revature.testng.LocationsTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: View Revature locations, buildings, and rooms</td>
 <td></td>
+<<<<<<< HEAD
 <td>5</td>
 <td>com.revature.testng.SalesforceLoginTest@5bcab519</td></tr>
+=======
+<td>0</td>
+<td>com.revature.testng.LocationsTestRunner@192b07fd</td></tr>
+>>>>>>> pre-integration
 <tr>
-<td title='com.revature.testng.SalesforceLoginTest.navigationTagsActive()'><b>navigationTagsActive</b><br>Test class: com.revature.testng.SalesforceLoginTest</td>
+<td title='com.revature.testng.LocationsTestRunner.feature()'><b>feature</b><br>Test class: com.revature.testng.LocationsTestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: modify locations page as an admin</td>
 <td></td>
+<<<<<<< HEAD
 <td>8</td>
 <td>com.revature.testng.SalesforceLoginTest@5bcab519</td></tr>
 <tr>
@@ -335,6 +405,10 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
 <td></td>
 <td>11</td>
 <td>com.revature.testng.SalesforceLoginTest@5bcab519</td></tr>
+=======
+<td>0</td>
+<td>com.revature.testng.LocationsTestRunner@192b07fd</td></tr>
+>>>>>>> pre-integration
 </table><p>
 </body>
 </html>
