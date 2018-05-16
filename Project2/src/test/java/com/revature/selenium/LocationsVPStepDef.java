@@ -83,7 +83,7 @@ public class LocationsVPStepDef {
 	@Given("^location name, city, and state$")
 	public void location_name_city_and_state() throws Throwable {
 		System.out.println("inside location name, city, and state given");
-		ServiceHooks.driver.findElement(By.xpath("//*[contains(@id,'dialogContent_6')]/div/div/md-input-container/input")).sendKeys("WorldGate");
+		ServiceHooks.driver.findElement(By.xpath("//*[contains(@id,'dialogContent_6')]/div/div/md-input-container/input")).sendKeys("Moon");
 		ServiceHooks.driver.findElement(By.xpath("//*[contains(@id,'dialogContent_6')]/div/div/md-input-container[2]/input")).sendKeys("Peoria");
 		ServiceHooks.driver.findElement(By.xpath("//*[contains(@id,'dialogContent_6')]/div/div/md-input-container[3]/md-select")).sendKeys("IL");		
 	}
@@ -97,7 +97,7 @@ public class LocationsVPStepDef {
 	@Then("^check if the location was added$")
 	public void check_if_the_location_was_added() throws Throwable {
 		System.out.println("inside check if the location was added");
-		WebElement element = ServiceHooks.driver.findElement(By.xpath("//button[contains(@ng-transclude.aria-label,'WorldGate')]"));
+		WebElement element = ServiceHooks.driver.findElement(By.xpath("//button[contains(@ng-transclude.aria-label,'Moon')]"));
 		try {
 			assertNotNull(element);
 			System.out.println("Locations was added");
@@ -111,7 +111,7 @@ public class LocationsVPStepDef {
 	@When("^newly added location is selected press the add building button$")
 	public void newly_added_location_is_selected_press_the_add_building_button() throws Throwable {
 		System.out.println("inside newly added location is selected, press add");
-		
+		ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]"));
 	}
 
 	@Then("^see if the new building pop up appears$")
