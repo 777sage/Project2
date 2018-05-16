@@ -54,6 +54,8 @@ public class SalesforceLoginTest {
 	  
 	  
 // 	  driver = new ChromeDriver();
+// 	  driver = new ChromeDriver();
+
 	  driver = new ChromeDriver(options);
 	  lp = new LoginPage();
   }
