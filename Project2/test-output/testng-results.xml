@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="3" ignored="0" total="11" passed="8">
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="104850" started-at="2018-05-16T14:02:10Z" finished-at="2018-05-16T14:03:55Z">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1454" started-at="2018-05-11T19:00:03Z" finished-at="2018-05-11T19:00:04Z">
+>>>>>>> new-mitch-branch
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="104850" started-at="2018-05-16T14:02:10Z" finished-at="2018-05-16T14:03:55Z">
       <class name="com.revature.testng.SalesforceLoginTest">
         <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.SalesforceLoginTest@5bcab519]" name="beforeSuite" is-config="true" duration-ms="40" started-at="2018-05-16T14:02:10Z" finished-at="2018-05-16T14:02:10Z">
@@ -365,6 +376,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.revature.testng.SalesforceLoginTest -->
+=======
+    <test name="Default test" duration-ms="1454" started-at="2018-05-11T19:00:03Z" finished-at="2018-05-11T19:00:04Z">
+      <class name="com.revature.testng.LocationsTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="setUpClass" is-config="true" duration-ms="949" started-at="2018-05-11T19:00:03Z" finished-at="2018-05-11T19:00:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="feature" duration-ms="31" started-at="2018-05-11T19:00:04Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-05-11T19:00:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[View Revature locations, buildings, and rooms]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.revature.testng.LocationsTestRunner@3f49dace]" name="tearDownClass" is-config="true" duration-ms="85" started-at="2018-05-11T19:00:04Z" finished-at="2018-05-11T19:00:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.revature.testng.LocationsTestRunner -->
+>>>>>>> new-mitch-branch
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
