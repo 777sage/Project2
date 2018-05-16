@@ -3,15 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.revature.testng.ProfileTests">
+      <class name="com.revature.testng.SalesforceLoginTest">
         <methods>
-          <include name="afterClass"/>
-          <include name="dp"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
           <include name="beforeClass"/>
+          <include name="vpTrainerTests"/>
+          <include name="trainerTests"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="vpFilterSuccessful"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.revature.testng.ProfileTests -->
+      </class> <!-- com.revature.testng.SalesforceLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
