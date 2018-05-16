@@ -84,21 +84,7 @@ public class SalesforceLoginTest {
 
   @BeforeTest
   public void beforeTest() {
-//	  File chrome = new File("src/main/resources/chromedriver");
-////	  File chrome = new File("src/test/resources/chromedriver.exe");
-//	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
-//	  driver = new ChromeDriver();
-//	  lp = new LoginPage();
-	  
-//	  try {
-//		  Properties props = new Properties();
-//		  InputStream in = new FileInputStream("src/main/resources/util.properties");
-//		  props.load(in);
-//		  trainerUsername = props.getProperty("trainerUsername");
-//		  trainerPassword = props.getProperty("trainerPassword");
-//	  } catch(Exception e) {
-//		  System.out.println(e.getMessage());
-//	  }
+
   }
 
   @AfterTest
@@ -116,11 +102,8 @@ public class SalesforceLoginTest {
   
   @Test(priority=0)
   public void findLoginPageSuccessful() {  
-//	  wd.get("https://dev.assignforce.revaturelabs.com");
-//	  System.out.println(loginPageTitle);
 	  lp.findLoginPage(driver);
 	  String loginPageTitle = lp.getTitle(driver);
-//	  assertEquals(loginPageTitle, "Login | Salesforce"); 
 	  try {
 		  assertEquals(loginPageTitle, "Login | Salesforce"); 
 		  Service.updateTest("findLoginPageSuccessful", "Success");

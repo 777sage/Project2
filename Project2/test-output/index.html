@@ -24,11 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-<<<<<<< HEAD
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
-=======
-      <span class="top-banner-font-1">1 suite</span>
->>>>>>> pre-integration
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -42,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -63,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -95,8 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-<<<<<<< HEAD
-                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="trainerTests">trainerTests</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="filterSuccessful">filterSuccessful</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -115,10 +110,12 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="vpFilterSuccessful">vpFilterSuccessful</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="vpTrainerTests">vpTrainerTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
-=======
-                    <span class="method-stats">3 methods,   3 passed</span>
->>>>>>> pre-integration
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,22 +126,42 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.LocationsTestRunner" hash-for-method="feature(View Revature locations, buildings, and rooms)">feature(View Revature locations, buildings, and rooms)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="findLoginPageSuccessful">findLoginPageSuccessful</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.LocationsTestRunner" hash-for-method="feature(Examine the core curricula and focuses of Revature)">feature(Examine the core curricula and focuses of Revature)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="findLoginPageSuccessfulAgain">findLoginPageSuccessfulAgain</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.LocationsTestRunner" hash-for-method="feature(modify locations page as an admin)">feature(modify locations page as an admin)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="homePageDisplaysAllBatches">homePageDisplaysAllBatches</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="vpTrainerTests">vpTrainerTests</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="loginAsTrainerSuccessful">loginAsTrainerSuccessful</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="loginAsTrainerWithWrongCredentials">loginAsTrainerWithWrongCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="loginAsVpSuccessful">loginAsVpSuccessful</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="navigationTagsActive">navigationTagsActive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.revature.testng.SalesforceLoginTest" hash-for-method="trainerTests">trainerTests</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -159,7 +176,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-<<<<<<< HEAD
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -168,18 +184,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="trainerTests">
-                  </a> <!-- trainerTests -->
-                  <span class="method-name">trainerTests</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;li class=&quot;md-nav-item ng-scope ng-isolate-scope layout-align-end-end&quot; role=&quot;option&quot; aria-selected=&quot;false&quot; md-nav-href=&quot;trainers&quot; name=&quot;trainers&quot; layout-align=&quot;end end&quot;&gt;...&lt;/li&gt; is not clickable at point (705, 60). Other element would receive the click: &lt;md-content class=&quot;md-padding _md&quot;&gt;...&lt;/md-content&gt;
+                  <a name="filterSuccessful">
+                  </a> <!-- filterSuccessful -->
+                  <span class="method-name">filterSuccessful</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=66.0.3359.181)
   (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;Andrews-MacBook-Pro.local&apos;, ip: &apos;192.168.60.193&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: C:\Users\Administrator\AppD...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: d40c3628b526c03aa9c43c39e71eb1da
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 96281e24d921a605277962b60b0bb587
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -194,7 +210,7 @@ Session ID: d40c3628b526c03aa9c43c39e71eb1da
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at com.revature.testng.SalesforceLoginTest.trainerTests(SalesforceLoginTest.java:266)
+	at com.revature.testng.SalesforceLoginTest.filterSuccessful(SalesforceLoginTest.java:234)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -229,15 +245,15 @@ Session ID: d40c3628b526c03aa9c43c39e71eb1da
                   <a name="vpFilterSuccessful">
                   </a> <!-- vpFilterSuccessful -->
                   <span class="method-name">vpFilterSuccessful</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;md-icon md-menu-origin=&quot;&quot; md-svg-icon=&quot;img/ic_filter_list_white_24px.svg&quot; class=&quot;ng-scope&quot;&gt;...&lt;/md-icon&gt; is not clickable at point (1150, 199). Other element would receive the click: &lt;button class=&quot;md-button md-ink-ripple md-focused&quot; type=&quot;button&quot; ng-transclude=&quot;&quot; ng-click=&quot;hCtrl.batchFilter = &apos;Active&apos;&quot; role=&quot;menuitem&quot;&gt;...&lt;/button&gt;
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=66.0.3359.181)
   (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;Andrews-MacBook-Pro.local&apos;, ip: &apos;192.168.60.193&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_92&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: C:\Users\Administrator\AppD...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: 0a54762801d4089480b3d0a74a8485f6
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 3343521aeb3882c777f5f166a266b286
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -252,7 +268,65 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at com.revature.testng.SalesforceLoginTest.vpFilterSuccessful(SalesforceLoginTest.java:347)
+	at com.revature.testng.SalesforceLoginTest.vpFilterSuccessful(SalesforceLoginTest.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="vpTrainerTests">
+                  </a> <!-- vpTrainerTests -->
+                  <span class="method-name">vpTrainerTests</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Andrews-MacBook-Pro.local&apos;, ip: &apos;192.168.60.193&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 0de4c812ee18c8b7218abfca45c0740b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.revature.testng.SalesforceLoginTest.vpTrainerTests(SalesforceLoginTest.java:297)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -284,49 +358,66 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
-=======
->>>>>>> pre-integration
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.revature.testng.LocationsTestRunner</span>
+              <span class="class-name">com.revature.testng.SalesforceLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(View Revature locations, buildings, and rooms)">
-                  </a> <!-- feature(View Revature locations, buildings, and rooms) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(View Revature locations, buildings, and rooms)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
+                  <a name="findLoginPageSuccessful">
+                  </a> <!-- findLoginPageSuccessful -->
+                  <span class="method-name">findLoginPageSuccessful</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Examine the core curricula and focuses of Revature)">
-                  </a> <!-- feature(Examine the core curricula and focuses of Revature) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Examine the core curricula and focuses of Revature)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
+                  <a name="findLoginPageSuccessfulAgain">
+                  </a> <!-- findLoginPageSuccessfulAgain -->
+                  <span class="method-name">findLoginPageSuccessfulAgain</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(modify locations page as an admin)">
-                  </a> <!-- feature(modify locations page as an admin) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(modify locations page as an admin)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
+                  <a name="homePageDisplaysAllBatches">
+                  </a> <!-- homePageDisplaysAllBatches -->
+                  <span class="method-name">homePageDisplaysAllBatches</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="vpTrainerTests">
-                  </a> <!-- vpTrainerTests -->
-                  <span class="method-name">vpTrainerTests</span>
+                  <a name="loginAsTrainerSuccessful">
+                  </a> <!-- loginAsTrainerSuccessful -->
+                  <span class="method-name">loginAsTrainerSuccessful</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsTrainerWithWrongCredentials">
+                  </a> <!-- loginAsTrainerWithWrongCredentials -->
+                  <span class="method-name">loginAsTrainerWithWrongCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsVpSuccessful">
+                  </a> <!-- loginAsVpSuccessful -->
+                  <span class="method-name">loginAsVpSuccessful</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigationTagsActive">
+                  </a> <!-- navigationTagsActive -->
+                  <span class="method-name">navigationTagsActive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trainerTests">
+                  </a> <!-- trainerTests -->
+                  <span class="method-name">trainerTests</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -334,11 +425,7 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
-            <span class="header-content">/private/var/folders/g5/gyqfq14d78x70gbdbxyv60m00000gn/T/testng-eclipse-569299216/testng-customsuite.xml</span>
-=======
-            <span class="header-content">/private/var/folders/g5/gyqfq14d78x70gbdbxyv60m00000gn/T/testng-eclipse--1301704478/testng-customsuite.xml</span>
->>>>>>> pre-integration
+            <span class="header-content">/private/var/folders/g5/gyqfq14d78x70gbdbxyv60m00000gn/T/testng-eclipse-963311699/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -347,7 +434,7 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.revature.testng.LocationsTestRunner&quot;/&gt;
+      &lt;class name=&quot;com.revature.testng.SalesforceLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -371,14 +458,6 @@ Session ID: 0a54762801d4089480b3d0a74a8485f6
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">cucumber</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">feature</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -395,70 +474,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(11);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
-data.setCell(0, 1, 'vpTrainerTests')
+data.setCell(0, 1, 'trainerTests')
 data.setCell(0, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(0, 3, 11872);
+data.setCell(0, 3, 13131);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'findLoginPageSuccessful')
 data.setCell(1, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(1, 3, 8940);
+data.setCell(1, 3, 12418);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'navigationTagsActive')
 data.setCell(2, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(2, 3, 8301);
+data.setCell(2, 3, 10168);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'homePageDisplaysAllBatches')
 data.setCell(3, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(3, 3, 7430);
+data.setCell(3, 3, 9506);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'filterSuccessful')
+data.setCell(4, 1, 'vpFilterSuccessful')
 data.setCell(4, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(4, 3, 6762);
+data.setCell(4, 3, 8618);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'vpFilterSuccessful')
+data.setCell(5, 1, 'vpTrainerTests')
 data.setCell(5, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(5, 3, 6672);
+data.setCell(5, 3, 8548);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'trainerTests')
+data.setCell(6, 1, 'filterSuccessful')
 data.setCell(6, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(6, 3, 6595);
+data.setCell(6, 3, 7651);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'loginAsTrainerSuccessful')
 data.setCell(7, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(7, 3, 5558);
+data.setCell(7, 3, 5059);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'loginAsVpSuccessful')
 data.setCell(8, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(8, 3, 5081);
+data.setCell(8, 3, 4946);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'loginAsTrainerWithWrongCredentials')
 data.setCell(9, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(9, 3, 4312);
+data.setCell(9, 3, 2995);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'findLoginPageSuccessfulAgain')
 data.setCell(10, 2, 'com.revature.testng.SalesforceLoginTest')
-data.setCell(10, 3, 2073);
-=======
-data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'com.revature.testng.LocationsTestRunner')
-data.setCell(0, 3, 32);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'feature')
-data.setCell(1, 2, 'com.revature.testng.LocationsTestRunner')
-data.setCell(1, 3, 12);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'feature')
-data.setCell(2, 2, 'com.revature.testng.LocationsTestRunner')
-data.setCell(2, 3, 9);
->>>>>>> pre-integration
+data.setCell(10, 3, 1555);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -484,7 +549,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-<<<<<<< HEAD
               <div class="chronological-class-name">com.revature.testng.SalesforceLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
@@ -492,185 +556,162 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">150 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">61 ms</span>
+                <span class="method-start">202 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findLoginPageSuccessful</span>
-                <span class="method-start">2356 ms</span>
+                <span class="method-start">5509 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">11298 ms</span>
+                <span class="method-start">17936 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">11642 ms</span>
+                <span class="method-start">18157 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginAsTrainerWithWrongCredentials</span>
-                <span class="method-start">13234 ms</span>
+                <span class="method-start">20335 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">17547 ms</span>
+                <span class="method-start">23332 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">17871 ms</span>
+                <span class="method-start">23494 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginAsTrainerSuccessful</span>
-                <span class="method-start">19110 ms</span>
+                <span class="method-start">25412 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">24670 ms</span>
+                <span class="method-start">30495 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">25053 ms</span>
+                <span class="method-start">30698 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homePageDisplaysAllBatches</span>
-                <span class="method-start">26954 ms</span>
+                <span class="method-start">32767 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">34390 ms</span>
+                <span class="method-start">42275 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">34708 ms</span>
+                <span class="method-start">42487 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationTagsActive</span>
-                <span class="method-start">36198 ms</span>
+                <span class="method-start">44044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">44500 ms</span>
+                <span class="method-start">54213 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">44857 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">filterSuccessful</span>
-                <span class="method-start">46307 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">53070 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">53413 ms</span>
+                <span class="method-start">54380 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">trainerTests</span>
-                <span class="method-start">54863 ms</span>
+                <span class="method-name">filterSuccessful</span>
+                <span class="method-start">55843 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">61479 ms</span>
+                <span class="method-start">63529 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">61776 ms</span>
+                <span class="method-start">63677 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">vpTrainerTests</span>
-                <span class="method-start">63041 ms</span>
+                <span class="method-name">trainerTests</span>
+                <span class="method-start">65338 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">74914 ms</span>
+                <span class="method-start">78472 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">75164 ms</span>
+                <span class="method-start">78663 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">vpTrainerTests</span>
+                <span class="method-start">80130 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">88681 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">88840 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">vpFilterSuccessful</span>
-                <span class="method-start">76515 ms</span>
+                <span class="method-start">90320 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">83204 ms</span>
+                <span class="method-start">98941 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">83530 ms</span>
+                <span class="method-start">99097 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findLoginPageSuccessfulAgain</span>
-                <span class="method-start">84991 ms</span>
+                <span class="method-start">100441 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">87065 ms</span>
+                <span class="method-start">101997 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">87410 ms</span>
+                <span class="method-start">102104 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginAsVpSuccessful</span>
-                <span class="method-start">89042 ms</span>
+                <span class="method-start">103842 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">94125 ms</span>
+                <span class="method-start">108792 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">94411 ms</span>
+                <span class="method-start">108964 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">94412 ms</span>
+                <span class="method-start">108965 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">94463 ms</span>
+                <span class="method-start">109072 ms</span>
               </div> <!-- configuration-suite after -->
-=======
-              <div class="chronological-class-name">com.revature.testng.LocationsTestRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">feature(Examine the core curricula and focuses of Revature)</span>
-                <span class="method-start">596 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">feature(View Revature locations, buildings, and rooms)</span>
-                <span class="method-start">665 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">feature(modify locations page as an admin)</span>
-                <span class="method-start">681 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">707 ms</span>
-              </div> <!-- configuration-class after -->
->>>>>>> pre-integration
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
