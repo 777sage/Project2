@@ -17,41 +17,12 @@ import cucumber.api.java.en.When;
 
 public class LocationsVPStepDef {
 
-	@When("^logged in as an admin, navigate to the locations page$")
-	public void logged_in_as_an_admin_navigate_to_the_locations_page() throws Throwable {
-	    System.out.println("inside logged in as admin, navigate to locations page");
-	    
-	    System.out.println(ServiceHooks.driver.getCurrentUrl() + "inside locations button");
-		System.out.println("Inside click locations, still here?");
-		ServiceHooks.driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
-		
-		System.out.println("inside click after timeout");
-		ServiceHooks.driver.findElement(By.cssSelector("body > div > div:nth-child(1) > ng-include > div > md-content > md-nav-bar > div > nav > ul > li:nth-child(4) > a")).click();
-		ServiceHooks.driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
-		ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		System.out.println(ServiceHooks.driver.getCurrentUrl() + "inside locations button after logout clicked");
-	}
-
-	@Then("^check if on the correct page by looking at the URL$")
-	public void check_if_on_the_correct_page_by_looking_at_the_URL() throws Throwable {
-		System.out.println("inside check if correct page url");
-		System.out.println("inside check url bottom");
-	    String expectedURL = "https://dev.assignforce.revaturelabs.com/locations";
-	    try{
-	    	assertTrue(expectedURL.equals(ServiceHooks.driver.getCurrentUrl()));
-	    	System.out.println("Successful URL");
-	    	Service.updateTest("Check locations URL", "Success");
-	    	
-	    } catch(Error e) {
-	    	System.out.println("Non-matching URL's");
-	    	Service.updateTest("Check locations URL", "Failed");
-	    }
-	}
 
 	@When("^add location button pressed$")
 	public void add_location_button_pressed() throws Throwable {
 		System.out.println("inside add location, push button");
 		WebElement element = ServiceHooks.driver.findElement(By.xpath("//*[@id=\'locAdd\']"));
+		ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		try {
 			element.click();
 			assertNotNull(element);
@@ -86,18 +57,22 @@ public class LocationsVPStepDef {
 		ServiceHooks.driver.findElement(By.xpath("//*[contains(@id,'dialogContent_6')]/div/div/md-input-container/input")).sendKeys("Moon");
 		ServiceHooks.driver.findElement(By.xpath("//*[contains(@id,'dialogContent_6')]/div/div/md-input-container[2]/input")).sendKeys("Peoria");
 		ServiceHooks.driver.findElement(By.xpath("//*[contains(@id,'dialogContent_6')]/div/div/md-input-container[3]/md-select")).sendKeys("IL");		
+		ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
 	}
 
 	@When("^save button clicked$")
 	public void save_button_clicked() throws Throwable {
 		System.out.println("inside save button clicked");
 		ServiceHooks.driver.findElement(By.xpath("//button[@type='submit']")).click();		
+		ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
 	}
 
 	@Then("^check if the location was added$")
 	public void check_if_the_location_was_added() throws Throwable {
 		System.out.println("inside check if the location was added");
-		WebElement element = ServiceHooks.driver.findElement(By.xpath("//button[contains(@ng-transclude.aria-label,'Moon')]"));
+		WebElement element = ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]"));
 		try {
 			assertNotNull(element);
 			System.out.println("Locations was added");
@@ -111,7 +86,11 @@ public class LocationsVPStepDef {
 	@When("^newly added location is selected press the add building button$")
 	public void newly_added_location_is_selected_press_the_add_building_button() throws Throwable {
 		System.out.println("inside newly added location is selected, press add");
-		ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]"));
+		WebElement element = ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')/parent::div]"));
+		
+		element.findElement(By.xpath(".."));
+		element.findElement(By.xpath("/following-sibling;;md-checkbox[1])"));
+		element.click();
 	}
 
 	@Then("^see if the new building pop up appears$")
@@ -260,8 +239,50 @@ public class LocationsVPStepDef {
 		System.out.println("inside newly modified location is selected, inactivate button pressed");
 	}
 
-	@Then("^see if lcation was deleted$")
+	@Then("^see if location was deleted$")
 	public void see_if_lcation_was_deleted() throws Throwable {
 		System.out.println("inside see if location was deleted");
+	}
+	
+//	@When("^logged in as an admin$")
+//	public void logged_in_as_an_admin() throws Throwable {
+//		 System.out.println("inside logged in as admin, navigate to locations page");
+//		    
+//		    System.out.println(ServiceHooks.driver.getCurrentUrl() + "inside locations button");
+//			System.out.println("Inside click locations, still here?");
+//			ServiceHooks.driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+//			
+//			System.out.println("inside click after timeout");
+//			ServiceHooks.driver.findElement(By.cssSelector("body > div > div:nth-child(1) > ng-include > div > md-content > md-nav-bar > div > nav > ul > li:nth-child(4) > a")).click();
+//			ServiceHooks.driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+//			ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//			System.out.println(ServiceHooks.driver.getCurrentUrl() + "inside locations button after logout clicked");
+//	}
+
+	@When("^the locatiton page is selected$")
+	public void the_locatiton_page_is_selected() throws Throwable {
+		System.out.println("Check if inside clicking locations tab");
+		WebElement element = ServiceHooks.driver.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[3]/a"));
+		try {
+			element.click();
+			assertNotNull(element);
+			System.out.println("Location tab was clicked success");
+	    	Service.updateTest("Location tab was clicked exists", "Success");
+		}catch (Error e) {
+			System.out.println("No Revature location button, Failed");
+	    	Service.updateTest("Location tab could not be clicked", "Failed");
+		}
+//		ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//	    String expectedURL = "https://dev.assignforce.revaturelabs.com/locations";
+//	    try{
+//	    	assertTrue(expectedURL.equals(ServiceHooks.driver.getCurrentUrl()));
+//			ServiceHooks.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//	    	System.out.println("Successful URL");
+//	    	Service.updateTest("Check locations URL", "Success");
+//	    	
+//	    } catch(Error e) {
+//	    	System.out.println("Non-matching URL's");
+//	    	Service.updateTest("Check locations URL", "Failed");
+//	    }
 	}
 }

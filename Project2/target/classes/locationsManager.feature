@@ -1,9 +1,12 @@
 Feature: modify locations page as an admin
 
+Background:
+#When logged in as an admin
+When the locatiton page is selected
+
+
 @LocationsAdminScenario
 Scenario: login as a VP and navigate to the locations page. Add a locations form that page
-When logged in as an admin, navigate to the locations page
-Then check if on the correct page by looking at the URL
 When add location button pressed
 Then check if pop up opened
 Given location name, city, and state
@@ -12,13 +15,13 @@ Then check if the location was added
 
 @LocationsAdminScenario
 Scenario: once a location is added then try to add a building to the location
-When newly added location is selected press the add building button
+When newly added location is selected press then add building button
 Then see if the new building pop up appears
 Given a building name
 Then see if the building was added
 
 @LocationsAdminScenario
-Scenario: try to add a room to a loction
+Scenario: try to add a room to a location
 When newly added location is selected press the add room button
 Given a room name
 Then check if the room was added
@@ -59,5 +62,5 @@ Then see if the room was deleted
 When newly modified buidling is selected, inactivate button pressed
 Then see if building was deleted
 When newly modified location is selected, inactivate selected button pressed
-Then see if lcation was deleted
+Then see if location was deleted
 
