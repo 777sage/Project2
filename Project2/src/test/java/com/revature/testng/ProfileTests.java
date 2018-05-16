@@ -77,8 +77,8 @@ public class ProfileTests {
   
   @Test(priority=1)
   public void loginSuccessful() {
-	  File chrome = new File("src/main/resources/chromedriver");
-//	  File chrome = new File("src/test/resources/chromedriver.exe");
+//	  File chrome = new File("src/main/resources/chromedriver");
+	  File chrome = new File("src/test/resources/chromedriver.exe");
 	  
 	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 	  

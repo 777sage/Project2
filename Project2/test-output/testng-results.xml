@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="5" ignored="0" total="15" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29014" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:51:07Z">
+  <suite name="Default suite" duration-ms="26236" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29014" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:51:07Z">
+    <test name="Default test" duration-ms="26236" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:27Z">
       <class name="com.revature.testng.ProfileTests">
-        <test-method status="FAIL" signature="afterClass()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="afterClass" duration-ms="39" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="FAIL" signature="afterClass()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="afterClass" duration-ms="41" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -46,15 +46,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="afterMethod" duration-ms="4" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="afterMethod" duration-ms="5" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="afterSuite" duration-ms="5" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="afterSuite" duration-ms="2" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="afterTest" duration-ms="3" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="afterTest" duration-ms="4" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -93,7 +93,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="beforeClass" duration-ms="3" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="beforeClass" duration-ms="7" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -132,15 +132,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="beforeMethod" duration-ms="6" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="beforeMethod" duration-ms="11" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="beforeSuite" duration-ms="4" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="beforeSuite" duration-ms="5" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="beforeTest" duration-ms="2" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="beforeTest" duration-ms="1" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -179,7 +179,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="dp()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="dp" duration-ms="2" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:38Z">
+        <test-method status="FAIL" signature="dp()[pri:0, instance:com.revature.testng.ProfileTests@57fffcd7]" name="dp" duration-ms="2" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:01Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Test not implemented]]>
@@ -218,27 +218,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dp -->
-        <test-method status="PASS" signature="loginSuccessful()[pri:1, instance:com.revature.testng.ProfileTests@57fffcd7]" name="loginSuccessful" duration-ms="9212" started-at="2018-05-15T20:50:38Z" finished-at="2018-05-15T20:50:47Z">
+        <test-method status="PASS" signature="loginSuccessful()[pri:1, instance:com.revature.testng.ProfileTests@57fffcd7]" name="loginSuccessful" duration-ms="8268" started-at="2018-05-16T13:30:01Z" finished-at="2018-05-16T13:30:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessful -->
-        <test-method status="PASS" signature="profileNameInputDoesNotSave()[pri:2, instance:com.revature.testng.ProfileTests@57fffcd7]" name="profileNameInputDoesNotSave" duration-ms="7564" started-at="2018-05-15T20:50:47Z" finished-at="2018-05-15T20:50:55Z">
+        <test-method status="PASS" signature="profileNameInputDoesNotSave()[pri:2, instance:com.revature.testng.ProfileTests@57fffcd7]" name="profileNameInputDoesNotSave" duration-ms="6372" started-at="2018-05-16T13:30:09Z" finished-at="2018-05-16T13:30:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileNameInputDoesNotSave -->
-        <test-method status="PASS" signature="addOneSkillSuccessful()[pri:3, instance:com.revature.testng.ProfileTests@57fffcd7]" name="addOneSkillSuccessful" duration-ms="381" started-at="2018-05-15T20:50:55Z" finished-at="2018-05-15T20:50:55Z">
+        <test-method status="PASS" signature="addOneSkillSuccessful()[pri:3, instance:com.revature.testng.ProfileTests@57fffcd7]" name="addOneSkillSuccessful" duration-ms="334" started-at="2018-05-16T13:30:15Z" finished-at="2018-05-16T13:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addOneSkillSuccessful -->
-        <test-method status="PASS" signature="addMultipleSkillsSuccessful()[pri:4, instance:com.revature.testng.ProfileTests@57fffcd7]" name="addMultipleSkillsSuccessful" duration-ms="2080" started-at="2018-05-15T20:50:55Z" finished-at="2018-05-15T20:50:57Z">
+        <test-method status="PASS" signature="addMultipleSkillsSuccessful()[pri:4, instance:com.revature.testng.ProfileTests@57fffcd7]" name="addMultipleSkillsSuccessful" duration-ms="1782" started-at="2018-05-16T13:30:16Z" finished-at="2018-05-16T13:30:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMultipleSkillsSuccessful -->
-        <test-method status="PASS" signature="unsavedSkillsDoNotPersist()[pri:5, instance:com.revature.testng.ProfileTests@57fffcd7]" name="unsavedSkillsDoNotPersist" duration-ms="1309" started-at="2018-05-15T20:50:57Z" finished-at="2018-05-15T20:50:58Z">
+        <test-method status="PASS" signature="unsavedSkillsDoNotPersist()[pri:5, instance:com.revature.testng.ProfileTests@57fffcd7]" name="unsavedSkillsDoNotPersist" duration-ms="1068" started-at="2018-05-16T13:30:18Z" finished-at="2018-05-16T13:30:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unsavedSkillsDoNotPersist -->
-        <test-method status="PASS" signature="addMultipleSkillsAndSaveSuccessful()[pri:6, instance:com.revature.testng.ProfileTests@57fffcd7]" name="addMultipleSkillsAndSaveSuccessful" duration-ms="8270" started-at="2018-05-15T20:50:58Z" finished-at="2018-05-15T20:51:07Z">
+        <test-method status="PASS" signature="addMultipleSkillsAndSaveSuccessful()[pri:6, instance:com.revature.testng.ProfileTests@57fffcd7]" name="addMultipleSkillsAndSaveSuccessful" duration-ms="8174" started-at="2018-05-16T13:30:19Z" finished-at="2018-05-16T13:30:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMultipleSkillsAndSaveSuccessful -->
