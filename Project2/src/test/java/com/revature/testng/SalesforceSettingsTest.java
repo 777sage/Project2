@@ -42,12 +42,18 @@ public class SalesforceSettingsTest {
 
 	@BeforeMethod
 	public void beforeMethod() {
-		options = new ChromeOptions();
-		options.addArguments("user-data-dir=C:\\Users\\skhaw\\AppData\\Local\\Google\\Chrome\\User Data");
-		options.addArguments("--start-maximized", "--disable-session-crashed-bubble");
+//		options = new ChromeOptions();
+//		options.addArguments("user-data-dir=C:\\Users\\skhaw\\AppData\\Local\\Google\\Chrome\\User Data");
+//		options.addArguments("--start-maximized", "--disable-session-crashed-bubble");
+		
+//		File chrome = new File("src/main/resources/chromedriver");
 		File chrome = new File("src/test/resources/chromedriver.exe");
+		
 		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
-		driver = new ChromeDriver(options);
+		
+//		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
         driver.manage().timeouts().setScriptTimeout(10,TimeUnit.SECONDS);

@@ -3,28 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.revature.testng.CurriculaCoreTests">
+      <class name="com.revature.testng.SalesforceSettingsTest">
         <methods>
-<<<<<<< HEAD
-=======
-          <include name="beforeClass"/>
-          <include name="filterSuccessful"/>
-          <include name="beforeMethod"/>
->>>>>>> integration-sameer
-          <include name="afterClass"/>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="loginSuccessful"/>
-          <include name="afterSuite"/>
-          <include name="clickAddButton"/>
-          <include name="beforeTest"/>
+          <include name="settingsDoNotSaveAfterLogout"/>
           <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="goToCurriculaPage"/>
+          <include name="settingsButtonsWorks"/>
           <include name="beforeMethod"/>
-          <include name="addToCoreThenCancel"/>
         </methods>
-      </class> <!-- com.revature.testng.CurriculaCoreTests -->
+      </class> <!-- com.revature.testng.SalesforceSettingsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
