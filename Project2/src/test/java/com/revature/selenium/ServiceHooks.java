@@ -100,8 +100,8 @@ public WebDriverWait wait;
 	    	//send success to the database
 	    }
 	    System.out.println("in service hooks after");
-//	    driver.close();
-//	    driver.quit();
+	    driver.close();
+	    driver.quit();
 	}
 	
 	
