@@ -139,29 +139,55 @@ public class LocationsVPStepDef {
 	public void see_if_the_building_was_added() throws Throwable {
 		System.out.println("inside see if the building was added");
 		try {
-			
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Moon')]/../../../button")));
 			ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]/../../../button")).click();
-//			System.out.println("clicked location first");
-//			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]")));
-//
-//			WebElement element = ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]"));
-//			System.out.println("got past finding building element");
-//			assertNotNull(element);
-//			element.click();
-//			System.out.println("got past click new building");
-//			System.out.println("building added to a location success");
-//			Service.updateTest("Building added to location", "Success");
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]")));
+
+			WebElement element = ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]"));
+			System.out.println("got past finding building element");
+			assertNotNull(element);
+			element.click();
+			System.out.println("got past click new building");
+			System.out.println("building added to a location success");
+			Service.updateTest("Building added to location", "Success");
 		}catch(Error e) {
 			System.out.println("Building failed to add to location failure");
 			Service.updateTest("Building added to location", "Failed");
 		}
 	}
 
-//	@When("^newly added location is selected press the add room button$")
-//	public void newly_added_location_is_selected_press_the_add_room_button() throws Throwable {
-//		System.out.println("inside newly added location is selected, press button");
-//	}
-//
+	@When("^newly added location is selected press the add room button$")
+	public void newly_added_location_is_selected_press_the_add_room_button() throws Throwable {
+		System.out.println("inside newly added location is selected, press button");
+		try {
+//			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Moon')]/../../../button")));
+//			ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]/../../../button")).click();
+
+			
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]")));
+
+			
+			WebElement element = ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]"));
+			
+			//click throneroom button //*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]/*
+			
+			System.out.println("got past finding building element");
+			assertNotNull(element);
+			// element.click();
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Moon')]/../../md-checkbox")));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]/*/*/div[1]/md-checkbox")));
+			ServiceHooks.driver.findElement(By.xpath("//*[contains(text(),'Moon')]/../../../../following-sibling::md-list[1]/*/*/div[1]/md-checkbox")).click();
+			
+			System.out.println("got past click new building");
+			System.out.println("building added to a location success");
+			Service.updateTest("Room added to location", "Success");
+		}catch(Error e) {
+			System.out.println("Building failed to add to location failure");
+			Service.updateTest("Room added to location", "Failed");
+		}
+	}
+
 //	@Given("^a room name$")
 //	public void a_room_name() throws Throwable {
 //		System.out.println("inside given a room name");

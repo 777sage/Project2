@@ -21,9 +21,9 @@ Given a building name
 Then see if the building was added
 
 
-#@LocationsAdminScenario
-#Scenario: try to add a room to a location
-#When newly added location is selected press the add room button
+@LocationsAdminScenario
+Scenario: try to add a room to a location
+When newly added location is selected press the add room button
 #Given a room name
 #Then check if the room was added
 
