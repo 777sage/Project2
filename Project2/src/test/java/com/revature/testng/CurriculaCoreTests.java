@@ -1,5 +1,7 @@
 package com.revature.testng;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.Test;
 
 import com.revature.selenium.CurriculumCore;
@@ -13,7 +15,9 @@ import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
@@ -72,8 +76,8 @@ public class CurriculaCoreTests {
   
   @Test(priority=1)
   public void loginSuccessful() {
-//	  File chrome = new File("src/main/resources/chromedriver");
-	  File chrome = new File("src/test/resources/chromedriver.exe");
+	  File chrome = new File("src/main/resources/chromedriver");
+//	  File chrome = new File("src/test/resources/chromedriver.exe");
 	  
 	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 	  
@@ -86,6 +90,9 @@ public class CurriculaCoreTests {
   @Test(priority=2)
   public void goToCurriculaPage() {
 	  cc.goToCurriculaPage(driver);
+	  WebElement curriculaLi = driver.findElement(By.xpath("//li[contains(@name, 'curricula')]"));
+	  String ariaSelected = curriculaLi.getAttribute("aria-selected");
+	  assertEquals(ariaSelected, "true");
   }
   
   @Test(priority=3)
@@ -94,8 +101,13 @@ public class CurriculaCoreTests {
   }
   
   @Test(priority=4)
-  public void addToCore() {
-	  cc.addToCore(driver);
+  public void addToCoreThenCancel() {
+	  int [] result = cc.addToCoreThenCancel(driver);
+	  int coreListSizeBefore = result[0];
+	  int coreListSizeAfter = result[1];
+	  assertEquals(coreListSizeBefore, coreListSizeAfter);  
+	  
+	  driver.quit();
   }
 
 }

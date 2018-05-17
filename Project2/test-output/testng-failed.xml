@@ -12,8 +12,8 @@
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
-          <include name="goToCurriculaPage"/>
           <include name="beforeMethod"/>
+          <include name="addToCoreThenCancel"/>
         </methods>
       </class> <!-- com.revature.testng.CurriculaCoreTests -->
     </classes>
