@@ -11,10 +11,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.revature.dao.Service;
-<<<<<<< HEAD
-//import com.revature.serviceHooks.ServiceHooks;
-=======
->>>>>>> new-mitch-branch
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
