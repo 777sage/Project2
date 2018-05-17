@@ -24,7 +24,8 @@ public class CurriculaTest {
 
     @BeforeClass
     public void setupClassTests() {
-        File chrome = new File("src/test/resources/chromedriver.exe");
+  	  	File chrome = new File("src/main/resources/chromedriver");
+//        File chrome = new File("src/test/resources/chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 
         driver = new ChromeDriver();
