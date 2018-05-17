@@ -3,13 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.revature.testng.TrainersTests">
+      <class name="com.revature.testng.ProfileTests">
         <methods>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="findTrainersPage"/>
+          <include name="dp"/>
+          <include name="afterTest"/>
+          <include name="profileNameInputDoesNotSave"/>
+          <include name="addMultipleSkillsSuccessful"/>
+          <include name="beforeTest"/>
+          <include name="addMultipleSkillsAndSaveSuccessful"/>
+          <include name="addOneSkillSuccessful"/>
+          <include name="beforeClass"/>
+          <include name="unsavedSkillsDoNotPersist"/>
         </methods>
-      </class> <!-- com.revature.testng.TrainersTests -->
+      </class> <!-- com.revature.testng.ProfileTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
