@@ -6,7 +6,6 @@
       <class name="com.revature.testng.SalesforceLoginTest">
         <methods>
           <include name="beforeClass"/>
-          <include name="vpTrainerTests"/>
           <include name="filterSuccessful"/>
           <include name="beforeMethod"/>
           <include name="afterClass"/>

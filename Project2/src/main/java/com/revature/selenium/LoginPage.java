@@ -9,6 +9,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 	String trainerUsername;
@@ -59,7 +61,25 @@ public class LoginPage {
 	}
 	
 	public void loginAsTrainer(WebDriver driver) {
-		findLoginPage(driver);
+		//start sameer block
+		System.out.println("Going to login");
+		WebDriverWait wait = new WebDriverWait(driver, 10 );
+		if(!driver.getTitle().equals("Login | Salesforce")) {
+			//go to url
+			findLoginPage(driver);
+		}		
+	
+		try {
+			if (wait.until(ExpectedConditions.elementToBeClickable(By.id("username"))) != null) {
+				System.out.println("Logging in");
+			} else {
+				System.out.println("Tried to login when already logged in");
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		//end sameer block
+		//findLoginPage(driver);
 		driver.findElement(By.id("username")).sendKeys(trainerUsername);
 		driver.findElement(By.name("pw")).sendKeys(trainerPassword);
 		driver.findElement(By.xpath("//*[@id='Login']")).click();
@@ -71,7 +91,26 @@ public class LoginPage {
 	}
 	
 	public void loginAsVp(WebDriver driver) {
-		findLoginPage(driver);
+		//start sameer block
+		System.out.println("Going to login");
+		if(!driver.getTitle().equals("Login | Salesforce")) {
+			findLoginPage(driver);
+		}		
+	    WebDriverWait wait = new WebDriverWait(driver, 5 );
+		try {
+			if (wait.until(ExpectedConditions.elementToBeClickable(By.id("username"))) != null) {
+				System.out.println("Logging in");
+			} else {
+				System.out.println("Tried to login when already logged in");
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		//end sameer block
+		
+		
+	
+		//findLoginPage(driver);
 		driver.findElement(By.id("username")).sendKeys(vpUsername);
 		driver.findElement(By.name("pw")).sendKeys(vpPassword);
 		driver.findElement(By.xpath("//*[@id='Login']")).click();
