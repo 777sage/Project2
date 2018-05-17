@@ -260,18 +260,18 @@ public void viewPTOcalanderPage(){
   @BeforeClass
   public void beforeClass() {
 	  //options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
-	  
-		  options = new ChromeOptions();
-		  options.addArguments("user-data-dir=C:\\Users\\Dakot\\AppData\\Local\\Google\\Chrome\\User Data");
-		  options.addArguments("--start-maximized");
+//	  
+//		  options = new ChromeOptions();
+//		  options.addArguments("user-data-dir=C:\\Users\\Dakot\\AppData\\Local\\Google\\Chrome\\User Data");
+//		  options.addArguments("--start-maximized");
 		  
 //		  File chrome = new File("src/main/resources/chromedriver");
 		  File chrome = new File("src/test/resources/chromedriver.exe");
 		  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 		  
 		  
-//	 	  driver = new ChromeDriver();
-		  driver = new ChromeDriver(options);
+	 	  driver = new ChromeDriver();
+//		  driver = new ChromeDriver(options);
 		  lp = new LoginPage();
   }
 
