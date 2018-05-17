@@ -44,16 +44,11 @@ public class SalesforceLoginTest {
 //  }
   @BeforeMethod
   public void beforeMethod() {
-<<<<<<< HEAD
+	  
 //	  options = new ChromeOptions();
-//	  options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
+//	  options.addArguments("user-data-dir=C:\\Users\\Dakot\\AppData\\Local\\Google\\Chrome\\User Data");
+//	  //options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
 //	  options.addArguments("--start-maximized");
-=======
-	  options = new ChromeOptions();
-	  options.addArguments("user-data-dir=C:\\Users\\Dakot\\AppData\\Local\\Google\\Chrome\\User Data");
-	  //options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
-	  options.addArguments("--start-maximized");
->>>>>>> dakota-test
 	  
 //	  File chrome = new File("src/main/resources/chromedriver");
 	  File chrome = new File("src/test/resources/chromedriver.exe");

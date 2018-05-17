@@ -6,21 +6,8 @@
       <class name="com.revature.testng.TrainersTests">
         <methods>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="filterSuccessful"/>
-          <include name="beforeMethod"/>
-          <include name="afterClass"/>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="vpFilterSuccessful"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-=======
-          <include name="viewPTOcalanderPage"/>
           <include name="afterClass"/>
           <include name="findTrainersPage"/>
->>>>>>> dakota-test
         </methods>
       </class> <!-- com.revature.testng.TrainersTests -->
     </classes>

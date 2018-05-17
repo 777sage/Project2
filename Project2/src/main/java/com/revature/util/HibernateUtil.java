@@ -28,7 +28,7 @@ public class HibernateUtil {
 	// default, it looks for a configuration file
 	// name: 'hibernate.cfg.xml
 	public static SessionFactory getSession() {
-		InputStream in =null;
+		InputStream in = null;
 		Properties props = new Properties();
 		try {
 			File hibernateFile = new File("src/main/resources/hibernate.properties");
