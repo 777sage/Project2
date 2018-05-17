@@ -118,4 +118,47 @@ public class CurriculumCore {
 		
 		return result;
 	}
+	
+	public int[] addToCoreThenSave(WebDriver driver) {
+		  
+		WebElement core = driver.findElement(By.xpath("//md-card-content[@id='core']/md-list"));
+		List<WebElement> coreList = core.findElements(By.xpath("//md-list-item[@role='listitem']"));
+		System.out.println("Core List size before: " + coreList.size());
+		int listSizeBefore = coreList.size();
+		
+		clickAddButton(driver);
+		
+		WebElement nameInput = driver.findElement(By.xpath("//input[contains(@aria-label, 'curriculumName')]"));
+//		nameInput.clear();
+		for (int i = 0 ; i < 9 ; i++) {
+			nameInput.sendKeys(Keys.BACK_SPACE);
+		}
+		nameInput.sendKeys("Angular");
+		
+		
+		WebElement skillSelect = driver.findElement(By.xpath("//md-select[contains(@aria-label, 'curriculumSkills')]"));
+		skillSelect.click();
+				
+		WebElement firstOption = driver.findElement(By.xpath("//div[contains(@id, 'select_container')]/md-select-menu/md-content/md-option"));
+		firstOption.click();
+		
+		WebElement secondOption = firstOption.findElement(By.xpath("following-sibling::*"));
+		secondOption.click();
+		secondOption.sendKeys(Keys.TAB);
+		
+		WebElement saveButton = driver.findElement(By.xpath("//span[contains(text(), 'Save')]"));
+		saveButton.click();
+		
+		core = driver.findElement(By.xpath("//md-card-content[@id='core']/md-list"));
+		coreList = core.findElements(By.xpath("//md-list-item[@role='listitem']"));
+		System.out.println("Core List size after: " + coreList.size());
+		int listSizeAfter = coreList.size();
+		
+		int[] result = new int[2];
+		result[0] = listSizeBefore;
+		result[1] = listSizeAfter;
+		
+		return result;
+		
+	}
 }

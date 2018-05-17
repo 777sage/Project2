@@ -107,6 +107,14 @@ public class CurriculaCoreTests {
 	  int coreListSizeAfter = result[1];
 	  assertEquals(coreListSizeBefore, coreListSizeAfter);  
 	  
+  }
+  
+  @Test(priority=5)
+  public void addToCoreThenSave() {
+	  int[] result = cc.addToCoreThenSave(driver);
+	  int listSizeBefore = result[0];
+	  int listSizeAfter = result[1];
+	  assertEquals(listSizeBefore + 1, listSizeAfter);
 	  driver.quit();
   }
 
