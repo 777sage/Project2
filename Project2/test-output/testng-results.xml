@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="5" total="8" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18237" started-at="2018-05-17T18:20:35Z" finished-at="2018-05-17T18:20:53Z">
+  <suite name="Default suite" duration-ms="18997" started-at="2018-05-17T18:32:24Z" finished-at="2018-05-17T18:32:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18237" started-at="2018-05-17T18:20:35Z" finished-at="2018-05-17T18:20:53Z">
+    <test name="Default test" duration-ms="18997" started-at="2018-05-17T18:32:24Z" finished-at="2018-05-17T18:32:43Z">
       <class name="com.revature.testng.TrainersTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.TrainersTests@4566e5bd]" name="beforeClass" is-config="true" duration-ms="2661" started-at="2018-05-17T18:20:35Z" finished-at="2018-05-17T18:20:38Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.TrainersTests@4566e5bd]" name="beforeClass" is-config="true" duration-ms="2609" started-at="2018-05-17T18:32:24Z" finished-at="2018-05-17T18:32:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="findTrainersPage()[pri:1, instance:com.revature.testng.TrainersTests@4566e5bd]" name="findTrainersPage" duration-ms="4128" started-at="2018-05-17T18:20:38Z" finished-at="2018-05-17T18:20:42Z">
+        <test-method status="FAIL" signature="findTrainersPage()[pri:1, instance:com.revature.testng.TrainersTests@4566e5bd]" name="findTrainersPage" duration-ms="5098" started-at="2018-05-17T18:32:27Z" finished-at="2018-05-17T18:32:32Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]"}
@@ -23,7 +23,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.1
 System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: 178d8d298bc9aa5fd5681093ce51558c
+Session ID: 2ef398fec462d8afd55ab04a02b156d2
 *** Element info: {Using=xpath, value=/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]}]]>
             </message>
             <full-stacktrace>
@@ -36,7 +36,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.1
 System info: host: 'Andrews-MacBook-Pro.local', ip: '192.168.60.193', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_92'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/g5/gyqfq14d78x...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: 178d8d298bc9aa5fd5681093ce51558c
+Session ID: 2ef398fec462d8afd55ab04a02b156d2
 *** Element info: {Using=xpath, value=/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -86,15 +86,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findTrainersPage -->
-        <test-method status="PASS" signature="getResumeFormIndividualWithNoResume()[pri:7, instance:com.revature.testng.TrainersTests@4566e5bd]" name="getResumeFormIndividualWithNoResume" duration-ms="6255" started-at="2018-05-17T18:20:42Z" finished-at="2018-05-17T18:20:48Z">
+        <test-method status="PASS" signature="getResumeFormIndividualWithNoResume()[pri:7, instance:com.revature.testng.TrainersTests@4566e5bd]" name="getResumeFormIndividualWithNoResume" duration-ms="6010" started-at="2018-05-17T18:32:32Z" finished-at="2018-05-17T18:32:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResumeFormIndividualWithNoResume -->
-        <test-method status="PASS" signature="viewPTOcalanderPage()[pri:8, instance:com.revature.testng.TrainersTests@4566e5bd]" name="viewPTOcalanderPage" duration-ms="5128" started-at="2018-05-17T18:20:48Z" finished-at="2018-05-17T18:20:53Z">
+        <test-method status="PASS" signature="viewPTOcalanderPage()[pri:8, instance:com.revature.testng.TrainersTests@4566e5bd]" name="viewPTOcalanderPage" duration-ms="5181" started-at="2018-05-17T18:32:38Z" finished-at="2018-05-17T18:32:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewPTOcalanderPage -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.revature.testng.TrainersTests@4566e5bd]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-17T18:20:53Z" finished-at="2018-05-17T18:20:53Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.revature.testng.TrainersTests@4566e5bd]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-05-17T18:32:43Z" finished-at="2018-05-17T18:32:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -81,7 +81,5 @@ public class LoginPage {
 			driver.findElement(By.id("save")).click();
 		}
 	}
-	
-	
 
 }
