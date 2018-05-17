@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.revature.testng.SalesforceSettingsTest">
+      <class name="com.revature.testng.TrainersTests">
         <methods>
-          <include name="settingsDoNotSaveAfterLogout"/>
-          <include name="afterMethod"/>
-          <include name="settingsButtonsWorks"/>
-          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="findTrainersPage"/>
         </methods>
-      </class> <!-- com.revature.testng.SalesforceSettingsTest -->
+      </class> <!-- com.revature.testng.TrainersTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

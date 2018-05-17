@@ -34,6 +34,8 @@ public class TrainersTests {
   public void findTrainersPage() {
 	  try {
 		  lp.loginAsVp(driver);
+		  WebDriverWait wait = new WebDriverWait(driver, 15);
+		  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]")));
 		  WebElement trainersTab = driver.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]"));
 		  trainersTab.click();
 		  String curTab = trainersTab.getAttribute("aria-selected");
@@ -45,7 +47,7 @@ public class TrainersTests {
 	  }
   }
   
-  @Test(priority=4, enabled=false)
+  @Test(priority=4, enabled=true)
   public void createNewTrainer() {
 	  int beforeCount = 0;
 	  int afterCount = 0;
@@ -88,7 +90,7 @@ public class TrainersTests {
 	  }
   }
   
-  @Test(priority=2, enabled = false)
+  @Test(priority=2, enabled = true)
   public void createTrainWithoutFirstName() {
 	  try {
 		  WebElement trainersTab = driver.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]"));
@@ -115,7 +117,7 @@ public class TrainersTests {
 	  }
   }
   
-  @Test(priority=3, enabled=false)
+  @Test(priority=3, enabled=true)
   public void createTrainWithoutLastName() {
 	  try {
 		  WebElement trainersTab = driver.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]"));
@@ -141,7 +143,7 @@ public class TrainersTests {
 	  }
   }
   
-@Test(priority=5,enabled=false)
+@Test(priority=5,enabled=true)
   public void deactivateTrainer(){
 	try {
 		WebElement trainersTab = driver.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]"));
@@ -175,7 +177,7 @@ public class TrainersTests {
 	}
   }
 
-@Test(priority=6,enabled=false)
+@Test(priority=6,enabled=true)
 public void activateTrainer(){
 	try {
 		WebElement trainersTab = driver.findElement(By.xpath("/html/body/div/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[5]"));
@@ -277,7 +279,7 @@ public void viewPTOcalanderPage(){
 
   @AfterClass
   public void afterClass() {
-	  //driver.quit();
+	  driver.quit();
   }
 
 }
