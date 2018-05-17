@@ -83,16 +83,7 @@ public class ProfileTests {
   }
   
   @Test(priority=2)
-  public void profileNameInputDoesNotSave() {
-//	  File chrome = new File("src/main/resources/chromedriver");
-//	  File chrome = new File("src/test/resources/chromedriver.exe");
-	  
-//	  System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
-//	  
-//	  driver = new ChromeDriver();
-//	  lp = new LoginPage();
-//	  pp = new ProfilePage();
-	  
+  public void profileNameInputDoesNotSave() {	  
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  
 	  String[] result = pp.enterNameInputAndChangePage(driver);

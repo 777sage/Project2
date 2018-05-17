@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="10" ignored="0" total="15" passed="5">
   <reporter-output>
   </reporter-output>
@@ -560,6 +561,137 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- addMultipleSkillsAndSaveSuccessful -->
       </class> <!-- com.revature.testng.ProfileTests -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14187" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14187" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:43Z">
+      <class name="com.revature.testng.CurriculaCoreTests">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeSuite" is-config="true" duration-ms="47" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="f" duration-ms="26" started-at="2018-05-17T16:22:29Z" data-provider="dp" finished-at="2018-05-17T16:22:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="f" duration-ms="11" started-at="2018-05-17T16:22:29Z" data-provider="dp" finished-at="2018-05-17T16:22:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginSuccessful()[pri:1, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="loginSuccessful" duration-ms="7559" started-at="2018-05-17T16:22:29Z" finished-at="2018-05-17T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessful -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:37Z" finished-at="2018-05-17T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="goToCurriculaPage()[pri:2, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="goToCurriculaPage" duration-ms="3349" started-at="2018-05-17T16:22:37Z" finished-at="2018-05-17T16:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCurriculaPage -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:37Z" finished-at="2018-05-17T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:40Z" finished-at="2018-05-17T16:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:40Z" finished-at="2018-05-17T16:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="clickAddButton()[pri:3, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="clickAddButton" duration-ms="381" started-at="2018-05-17T16:22:40Z" finished-at="2018-05-17T16:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAddButton -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:40Z" finished-at="2018-05-17T16:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:40Z" finished-at="2018-05-17T16:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="addToCoreThenCancel()[pri:4, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="addToCoreThenCancel" duration-ms="2787" started-at="2018-05-17T16:22:40Z" finished-at="2018-05-17T16:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCoreThenCancel -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-05-17T16:22:43Z" finished-at="2018-05-17T16:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:43Z" finished-at="2018-05-17T16:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-05-17T16:22:43Z" finished-at="2018-05-17T16:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.revature.testng.CurriculaCoreTests@56ef9176]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-05-17T16:22:43Z" finished-at="2018-05-17T16:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.revature.testng.CurriculaCoreTests -->
+>>>>>>> curriculum-andy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
