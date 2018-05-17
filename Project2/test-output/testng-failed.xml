@@ -3,36 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.revature.testng.ProfileTests">
-=======
-      <class name="com.revature.testng.CurriculaCoreTests">
->>>>>>> curriculum-andy
+      <class name="com.revature.testng.TrainersTests">
         <methods>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="dp"/>
-          <include name="afterTest"/>
-<<<<<<< HEAD
-          <include name="profileNameInputDoesNotSave"/>
-          <include name="addMultipleSkillsSuccessful"/>
-          <include name="beforeTest"/>
-          <include name="addMultipleSkillsAndSaveSuccessful"/>
-          <include name="addOneSkillSuccessful"/>
-          <include name="beforeClass"/>
-          <include name="unsavedSkillsDoNotPersist"/>
+          <include name="findTrainersPage"/>
         </methods>
-      </class> <!-- com.revature.testng.ProfileTests -->
-=======
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="addToCoreThenCancel"/>
-        </methods>
-      </class> <!-- com.revature.testng.CurriculaCoreTests -->
->>>>>>> curriculum-andy
+      </class> <!-- com.revature.testng.TrainersTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
