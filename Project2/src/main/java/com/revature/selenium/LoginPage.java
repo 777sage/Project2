@@ -72,8 +72,8 @@ public class LoginPage {
 	
 	public void loginAsVp(WebDriver driver) {
 		findLoginPage(driver);
-		driver.findElement(By.id("username")).sendKeys(trainerUsername);
-		driver.findElement(By.name("pw")).sendKeys(trainerPassword);
+		driver.findElement(By.id("username")).sendKeys(vpUsername);
+		driver.findElement(By.name("pw")).sendKeys(vpPassword);
 		driver.findElement(By.xpath("//*[@id='Login']")).click();
 		
 		if (driver.getTitle().equals("Verify Your Identity | Salesforce")) {
@@ -81,7 +81,5 @@ public class LoginPage {
 			driver.findElement(By.id("save")).click();
 		}
 	}
-	
-	
 
 }
