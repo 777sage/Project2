@@ -9,6 +9,7 @@
           <include name="viewPTOcalanderPage"/>
           <include name="afterClass"/>
           <include name="findTrainersPage"/>
+          <include name="getResumeFormIndividualWithNoResume"/>
         </methods>
       </class> <!-- com.revature.testng.TrainersTests -->
     </classes>

@@ -276,7 +276,7 @@ public void viewPTOcalanderPage(){
 
   @AfterClass
   public void afterClass() {
-	  //driver.quit();
+	  driver.quit();
   }
 
 }
