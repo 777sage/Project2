@@ -45,7 +45,8 @@ public class SalesforceLoginTest {
   @BeforeMethod
   public void beforeMethod() {
 	  options = new ChromeOptions();
-	  options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
+	  options.addArguments("user-data-dir=C:\\Users\\Dakot\\AppData\\Local\\Google\\Chrome\\User Data");
+	  //options.addArguments("user-data-dir=C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
 	  options.addArguments("--start-maximized");
 	  
 //	  File chrome = new File("src/main/resources/chromedriver");
@@ -207,7 +208,7 @@ public class SalesforceLoginTest {
 		  String isSelected = reportsTab.getAttribute("aria-selected");
 		  System.out.println("Is Selected: " + isSelected);
 		  assertEquals(isSelected, "true");
-		  service.updateTest("reportsTabSelected", "Success");
+		  Service.updateTest("reportsTabSelected", "Success");
 		  
 		  WebElement reportsTabSpan = driver.findElement(By.xpath("/html/body/div[1]/div[1]/ng-include/div/md-content/md-nav-bar/div/nav/ul/li[7]/a/span/span"));
 		  System.out.println("Reports Tab Test" + reportsTabSpan.getText());
