@@ -5,6 +5,12 @@
     <classes>
       <class name="com.revature.testng.CurriculaCoreTests">
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="beforeClass"/>
+          <include name="filterSuccessful"/>
+          <include name="beforeMethod"/>
+>>>>>>> integration-sameer
           <include name="afterClass"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
