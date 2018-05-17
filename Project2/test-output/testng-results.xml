@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="774" started-at="2018-05-16T18:34:07Z" finished-at="2018-05-16T18:34:08Z">
+=======
+<testng-results skipped="0" failed="0" ignored="5" total="8" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12082" started-at="2018-05-17T14:32:38Z" finished-at="2018-05-17T14:32:50Z">
+>>>>>>> dakota-test
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.testng.LocationsTestRunner@192b07fd]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="774" started-at="2018-05-16T18:34:07Z" finished-at="2018-05-16T18:34:08Z">
       <class name="com.revature.testng.LocationsTestRunner">
         <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.revature.testng.LocationsTestRunner@192b07fd]" name="setUpClass" is-config="true" duration-ms="451" started-at="2018-05-16T18:34:07Z" finished-at="2018-05-16T18:34:08Z">
@@ -108,6 +116,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.revature.testng.LocationsTestRunner -->
+=======
+    <test name="Default test" duration-ms="12082" started-at="2018-05-17T14:32:38Z" finished-at="2018-05-17T14:32:50Z">
+      <class name="com.revature.testng.TrainersTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.revature.testng.TrainersTests@553f17c]" name="beforeClass" is-config="true" duration-ms="2848" started-at="2018-05-17T14:32:38Z" finished-at="2018-05-17T14:32:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="findTrainersPage()[pri:1, instance:com.revature.testng.TrainersTests@553f17c]" name="findTrainersPage" duration-ms="7063" started-at="2018-05-17T14:32:40Z" finished-at="2018-05-17T14:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTrainersPage -->
+        <test-method status="PASS" signature="getResumeFormIndividualWithNoResume()[pri:7, instance:com.revature.testng.TrainersTests@553f17c]" name="getResumeFormIndividualWithNoResume" duration-ms="893" started-at="2018-05-17T14:32:48Z" finished-at="2018-05-17T14:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResumeFormIndividualWithNoResume -->
+        <test-method status="PASS" signature="viewPTOcalanderPage()[pri:8, instance:com.revature.testng.TrainersTests@553f17c]" name="viewPTOcalanderPage" duration-ms="1244" started-at="2018-05-17T14:32:48Z" finished-at="2018-05-17T14:32:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewPTOcalanderPage -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.revature.testng.TrainersTests@553f17c]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-05-17T14:32:50Z" finished-at="2018-05-17T14:32:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.revature.testng.TrainersTests -->
+>>>>>>> dakota-test
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
